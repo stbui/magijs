@@ -1,0 +1,53 @@
+{
+  "name": "magijs",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "postinstall": "lerna run build",
+    "preinstall": "node ./scripts/checkYarn.js",
+    "clear": "lerna clean",
+    "bootstrap:ci": "lerna bootstrap",
+    "build": "lerna run build",
+    "demo:magi": "cd ./examples/demo && yarn start",
+    "demo:vite": "cd ./examples/demo-vite && yarn dev",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "docs": "yarn docs:dev",
+    "docs:dev": "node ./packages/cli/bin/zajs.js dev",
+    "docs:build": "node ./packages/cli/bin/zajs.js build",
+    "release": "yarn run build && lerna publish --exact --conventional-commits --force-publish",
+    "release:lerna": "lerna version --exact --no-git-tag-version",
+    "release:beta": "lerna publish --force-publish=* --exact --preid=beta --npm-tag=beta"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "lint-staged": {
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "git add"
+    ],
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "chalk": "4.1.2",
+    "lerna": "^4.0.0",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  }
+}

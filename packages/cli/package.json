@@ -1,0 +1,25 @@
+{
+  "name": "@magijs/cli",
+  "version": "0.0.0",
+  "description": "命令行工具",
+  "license": "ISC",
+  "bin": {
+    "magi": "bin/zajs.js"
+  },
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch",
+    "test": "node lib/index.js component login"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
+  "dependencies": {
+    "npm-updater": "3.0.3",
+    "@magijs/umi": "0.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@magijs/magi",
+  "version": "0.0.0",
+  "description": "企业级应用框架",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "dependencies": {
+    "umi": "3.5.26"
+  }
+}
