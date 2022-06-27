@@ -15,7 +15,7 @@
     "docs": "yarn docs:dev",
     "docs:dev": "node ./packages/cli/bin/zajs.js dev",
     "docs:build": "node ./packages/cli/bin/zajs.js build",
-    "release": "yarn run build && lerna publish --exact --conventional-commits --force-publish",
+    "release": "yarn run build && lerna publish prepatch --exact --conventional-commits --force-publish",
     "release:lerna": "lerna version --exact --no-git-tag-version",
     "release:beta": "lerna publish --force-publish=* --exact --preid=beta --npm-tag=beta"
   },
@@ -42,12 +42,12 @@
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "devDependencies": {
-    "@types/node": "^16.11.11",
-    "chalk": "4.1.2",
-    "lerna": "^4.0.0",
-    "lint-staged": "^12.1.2",
+    "@types/node": "^18.0.0",
+    "chalk": "5.0.1",
+    "lerna": "^5.1.6",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.5.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.5.4"
+    "typescript": "^4.7.4"
   }
 }
