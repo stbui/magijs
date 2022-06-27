@@ -1,6 +1,6 @@
 {
   "name": "@magijs/magi",
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.6",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -17,5 +17,5 @@
   "dependencies": {
     "umi": "3.5.26"
   },
-  "gitHead": "437f823d0fec7c135f0e8205dacb1a2e24931075"
+  "gitHead": "8623451442d7c4bf77153212d1bb8a3e86d74f6a"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@magijs/cli",
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.6",
   "description": "命令行工具",
   "license": "ISC",
   "bin": {
@@ -22,8 +22,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@magijs/umi": "0.0.1-alpha.5",
+    "@magijs/umi": "0.0.1-alpha.6",
     "npm-updater": "3.0.3"
   },
-  "gitHead": "0542061c08a8caf2528cce6a5132fd20cf03de1c"
+  "gitHead": "8623451442d7c4bf77153212d1bb8a3e86d74f6a"
 }
