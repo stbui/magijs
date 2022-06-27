@@ -1,6 +1,6 @@
 {
   "name": "@magijs/preset-plugin",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "插件集",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -34,5 +34,6 @@
     "@umijs/plugin-sass": "1.1.1",
     "@umijs/plugin-test": "1.0.2",
     "browserslist-useragent-regexp": "^3.0.0"
-  }
+  },
+  "gitHead": "501098ed48132ca4eb0e662bfa9c87dc5a61e3a8"
 }
