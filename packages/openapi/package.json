@@ -1,6 +1,6 @@
 {
   "name": "@magijs/openapi",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "OpenAPI",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -35,5 +35,5 @@
     "@types/node": "^14.14.22",
     "np": "^7.2.0"
   },
-  "gitHead": "0542061c08a8caf2528cce6a5132fd20cf03de1c"
+  "gitHead": "b68757c0b6f9973a2539e3a1d29e176dbe315884"
 }
