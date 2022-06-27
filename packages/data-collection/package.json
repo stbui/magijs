@@ -1,7 +1,6 @@
 {
   "name": "@magijs/data-collection",
-  "private": "true",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1-alpha.5",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -12,6 +11,9 @@
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch",
     "test": "node ./lib/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "request": "2.88.2"

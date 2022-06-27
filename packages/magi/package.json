@@ -1,7 +1,6 @@
 {
   "name": "@magijs/magi",
-  "private": "true",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1-alpha.5",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -11,6 +10,9 @@
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "umi": "3.5.26"
