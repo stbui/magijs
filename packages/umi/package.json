@@ -1,6 +1,6 @@
 {
   "name": "@magijs/umi",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -17,7 +17,7 @@
     "esm"
   ],
   "dependencies": {
-    "@magijs/data-collection": "0.0.1-alpha.2",
+    "@magijs/data-collection": "0.0.1-alpha.3",
     "umi": "3.5.26"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@magijs/data-collection",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -15,5 +15,5 @@
   "dependencies": {
     "request": "2.88.2"
   },
-  "gitHead": "437f823d0fec7c135f0e8205dacb1a2e24931075"
+  "gitHead": "0542061c08a8caf2528cce6a5132fd20cf03de1c"
 }
