@@ -2,21 +2,24 @@ import { fork } from 'child_process';
 import DataCollect from '@magijs/data-collection';
 import { Rewrite } from './rewrite';
 
-const { version } = require('../package');
-const umiVersion = require('umi/package').version;
-
 export class Middleware {
   private _presets?: string;
   private dataCollect: DataCollect;
+  private _version = require('../package').version;
+  private _umiVersion = require('umi/package').version;
 
-  constructor(options: { presets: string; platformHost?: any }) {
+  constructor(options: { presets: string; platformHost?: any; version?: any }) {
     this._presets = options.presets;
+
+    if (options.version) {
+      this._version = options.version;
+    }
 
     new Rewrite();
     this.dataCollect = new DataCollect({
       HOST: options.platformHost,
-      magiVersion: version,
-      coreVersion: umiVersion,
+      magiVersion: this._version,
+      coreVersion: this._umiVersion,
       core: 'umi',
     });
 
@@ -33,12 +36,12 @@ export class Middleware {
 
     // 插件集
     process.env.UMI_PRESETS = require.resolve(this._presets);
-    process.env.ZAJS_VERSION = version;
-    process.env.MAGI_VERSION = version;
+    process.env.ZAJS_VERSION = this._version;
+    process.env.MAGI_VERSION = this._version;
   }
 
   setup() {
-    console.log(`magi@${version} core@${umiVersion}...`);
+    console.log(`magi@${this._version} core@${this._umiVersion}...`);
 
     const commands = process.argv.slice(2);
     const child = fork(require.resolve('umi/bin/umi'), commands, {

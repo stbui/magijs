@@ -1,0 +1,26 @@
+{
+  "name": "@magi/plugin-constraint",
+  "version": "0.0.27",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "comment-json": "^4.1.0",
+    "git-local-info": "^1.0.1",
+    "terminal-link": "^2.1.1"
+  }
+}

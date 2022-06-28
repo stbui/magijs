@@ -1,0 +1,164 @@
+{
+  "DEP_ZAJS_LATEST": {
+    "alwaysEnable": true,
+    "why": "避免 magi 版本分散。",
+    "description": "magi 版本不允许写死，只能使用 ^ 前缀。"
+  },
+  "FILES_DOCKERFILE": {
+    "why": "规避常见问题。",
+    "description": "必须有 dockerfile 且配置正确。"
+  },
+  "FILES_TSCONFIG_JSON": {
+    "why": "规避常见问题。",
+    "description": "必须有 tsconfig.json 且配置正确。"
+  },
+  "FILES_GITIGNORE": {
+    "description": "必须有 .gitignore 且配置正确。"
+  },
+  "FILES_ALL_TYPESCRIPT": {
+    "description": "src 下不允许出现 .js 和 .jsx 文件。",
+    "enableByConfig": true
+  },
+  "CODE_COMPONENT_COMPLEX": {
+    "why": "降低项目复杂度，提高拆分意识。",
+    "description": "components 目录下的单文件行数不超过 400 行。"
+  },
+  "test": "===========================",
+  "DEP_LIMITED_RESOLUTIONS": {
+    "why": "在框架或依赖库中解决问题，采用治本的方式。",
+    "description": "不允许通过 resolutions 锁定我们自己维护的一方和二方库版本，包括 umi、antd、antd-mobile、qiankun、dva、umi-request，以及 @umijs、@ant-design、@magi 和 @za 前缀的库。"
+  },
+  "DEP_WITH_VERSION": {
+    "why": "避免依赖大版本升级或其他因素导致的 BREAK CHANGE 。",
+    "description": "依赖的版本必须包含带数字的版本号，不允许使用 latest、*、或 beta 等 tag。"
+  },
+  "DEP_LIMITED_ROUTE_LIBS": {
+    "why": "已内置路由方案。",
+    "description": "不允许出现其他路由方案依赖，包括 react-router, react-router-dom, reach-router。"
+  },
+  "DEP_LIMITED_DATA_FLOW_LIBS": {
+    "why": "已内置 hooks 和 dva 的数据流方案。",
+    "description": "不允许出现其他数据流方案依赖，包括 redux, mobx, hox, rematch, recoil, unstate-next 。"
+  },
+  "DEP_LIMITED_REQUEST_LIBS": {
+    "why": "已内置 useRequest + umi-request 的请求方案。",
+    "description": "不允许出现其他请求方案依赖，包括 axios、unfetch、whatwg-fetch、isomorphic-unfetch、swr、react-fetch。"
+  },
+  "DEP_LIMITED_VISION_LIBS": {
+    "why": "一致性 。",
+    "description": "不允许出现 antv 栈以外的可视化类库，包含 echarts、highcharts、d3，React 项目常规统计图表采用 @ant-design/charts。"
+  },
+  "DEP_LIMITED_MICRO_FRONTEND_LIBS": {
+    "why": "magi 已内置 qiankun 微前端方案。",
+    "description": "不允许出现 qiankun 外的微前端类库，包括 single-spa、oc、icestark、mooa、luigi。"
+  },
+  "DEP_LIMITED_TEST_LIBS": {
+    "why": "magi 已集成 jest，通过 magi test 执行测试。",
+    "description": "不允许出现 magi 已包含的同类测试库依赖，包括 jest, mocha, chai, istanbul。"
+  },
+  "DEP_LIMITED_COMPONENT_TEST_LIBS": {
+    "why": "统一使用 @testing-library/react 做组件测试。",
+    "description": "不允许出现 enzyme 依赖。"
+  },
+  "CONFIG_FILE_TYPESCRIPT": {
+    "why": "一致性，并且 TypeScript 在使用时有更好的配置项提示。",
+    "description": "配置文件必须为 config/config.ts。"
+  },
+  "CONFIG_DEFINE": {
+    "why": "使用时有更好的配置项提示。",
+    "description": "配置文件中必须通过 defineConfig 定义配置。"
+  },
+  "CONFIG_LIMIT_KEYS": {
+    "why": "一致性。",
+    "description": "不允许修改部分配置项，包括 autoprefixer、cssnano、extraBabelPlugins、extraBabelPresets、extraPostCSSPlugins、inlineLimit、mountElementId、polyfill、singular、terserOptions。"
+  },
+  "ROUTE_NO_CONVENTIONAL": {
+    "why": "统一用配置式路由。",
+    "description": "不允许使用约定式路由。",
+    "enableByConfig": true
+  },
+  "FILES_NO_PRETTIER_MODIFY": {
+    "why": "统一代码风格。",
+    "description": "不允许修改 prettier 配置。",
+    "enableByConfig": true
+  },
+  "FILES_NO_ESLINT_RULE_DISABLE": {
+    "why": "统一代码风格。",
+    "description": "不允许关闭 eslint 里现有的 rules 规则。",
+    "enableByConfig": true
+  },
+  "CODE_NO_CJS_MODULE": {
+    "why": "cjs 经常触发问题，尤其是 cjs 和 esm 混用的时候，并且 cjs 没有 tree-shaking。",
+    "description": "不允许出现 common js（cjs） 模块类型的 import 和 export 写法，只允许 esm 的格式。"
+  },
+  "CODE_NO_UNSAFE_SYNTAX": {
+    "why": "可能导致安全问题，业务代码中不建议使用。",
+    "description": "不允许使用 eval, with, newFunction 等语法。"
+  },
+  "CODE_PREFER_USE_CSS_MODULES": {
+    "why": "避免命名冲突。",
+    "description": "引用项目中的 CSS 时使用 css modules，不允许使用非 css modules 的写法。"
+  },
+  "CODE_PREFER_USE_AT": {
+    "why": "降低项目复杂度。",
+    "description": "不出现三层或以上的 ../ 相对路径查找。"
+  },
+  "CODE_NO_ANTD_DIST_CSS": {
+    "why": "css 在 import antd 组件时会被自动引入，无需手动引入。手动引入会导致重复，如果使用 theme 功能并且引入 antd.css，theme 功能会不生效。",
+    "description": "不手动引入 antd.css 或 antd.less。"
+  },
+  "CODE_NO_ANTD_LIB_ES": {
+    "why": "已内置处理按需编译。",
+    "description": "不允许手动引用 antd/lib 或 antd/es 下的文件，类型除外。"
+  },
+  "CODE_NO_TERNARY_EXPRESSION_EMBED": {
+    "why": "降低复杂度。",
+    "description": "不允许三元表达式嵌套。"
+  },
+  "ROUTE_ACTION_FROM_MAGI": {
+    "why": "一致性，潜在的尺寸增加，所以统一走 magi 的封装。",
+    "description": "不允许直接依赖底层库做路由操作，包括 react-router、react-router-dom、dva。"
+  },
+  "PKG_LIMITED_BUILD_ENV": {
+    "why": "规避常见问题。",
+    "description": "package.json 中的 scripts.build 不包含非法环境变量，包括 ANALYZE、COMPRESS、BABEL_CACHE。"
+  },
+  "CONFIG_ESM": {
+    "why": "一致性。",
+    "description": "配置文件中不允许使用 cjs 格式，必须通过 esm 导出。"
+  },
+  "FILES_PLURAL": {
+    "why": "一致性。",
+    "description": "必须是复数目录。"
+  },
+  "FILES_ROUTE_FILE": {
+    "why": "统一仓库的目录和组织方式。",
+    "description": "路由文件必须遵守 group/大驼峰 的规则，group 可选。"
+  },
+  "FILES_ALL_SCSS": {
+    "description": "不允许出现对非 .scss CSS 文件的引用，包括 .css、.stylus、.less 和 .sass。"
+  },
+  "CONFIG_NO_PLUGIN_DISABLE": {
+    "why": "针对中台开启的插件无需禁用。",
+    "description": "不允许禁用插件，配置中不能出现值为 false 的配置项。"
+  },
+  "CONFIG_NO_EXTRA_PLUGINS": {
+    "why": "插件能力太强，可修改的范围太广，有需求做到 magi 或 magi 官方插件中。",
+    "description": "不允许配置 magi 官方插件和白名单里之外的三方插件。"
+  },
+  "CONFIG_DVA_NO_SKIPMODELVALIDATE": {
+    "why": "跳过 dva model 校验意味着 model 写法不规范。",
+    "description": "不允许配置 dva.skipModelValidate 来跳过 dva model 的校验。"
+  },
+  "CONFIG_ONEAPI_REQUEST_IMPORT_STATEMENT": {
+    "why": "统一请求方案。",
+    "description": "openAPI 的 requestImportStatement 只允许配置为 import { request } from '@magi/magi';。"
+  },
+  "CONFIG_ONEAPI_TYPESCRIPT": {
+    "description": "openAPI 的 typeScript 只允许配置为 true。"
+  },
+  "CODE_NO_CROSS_PAGE_GROUP_IMPORT": {
+    "why": "保证 Page 的独立性，通常修改一个 Page 不会注意到其他 Page 有没有依赖他。",
+    "description": "不允许跨 Page 或跨 Group 引用文件。"
+  }
+}
