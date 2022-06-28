@@ -1,6 +1,6 @@
 {
   "name": "@magijs/umi",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@magijs/data-collection": "0.0.1-alpha.8",
+    "@magijs/data-collection": "0.0.1-alpha.9",
     "umi": "3.5.26"
   },
   "gitHead": "b729b798c4d85f8ba7a75070864599ce95cd3bf9"

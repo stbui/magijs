@@ -1,6 +1,6 @@
 {
   "name": "@magijs/preset-plugin",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "description": "插件集",
   "main": "lib/index.js",
   "module": "esm/index.js",
