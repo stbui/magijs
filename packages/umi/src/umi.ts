@@ -25,7 +25,7 @@ export class Middleware {
 
     if (process.env.DEPLOY_ENV) {
       process.env.UMI_ENV = process.env.DEPLOY_ENV;
-      process.env.MAGI_EN = process.env.DEPLOY_ENV;
+      process.env.MAGI_ENV = process.env.DEPLOY_ENV;
     } else {
       if (!process.env.UMI_ENV && process.env.MAGI_ENV) {
         process.env.UMI_ENV = process.env.MAGI_ENV;
