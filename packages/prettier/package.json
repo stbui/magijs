@@ -1,7 +1,7 @@
 {
-  "name": "@magijs/data-collection",
-  "version": "0.0.1-alpha.10",
-  "description": "企业级应用框架",
+  "name": "@magi/prettier",
+  "version": "1.0.0",
+  "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -10,18 +10,17 @@
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch",
-    "test": "node ./lib/index.js"
-  },
-  "publishConfig": {
-    "access": "public"
+    "test": "ncc build src/index.ts -o dist"
   },
   "files": [
     "lib",
     "esm",
     "bin"
   ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "request": "2.88.2"
+    "prettier": "^2.7.1"
   },
-  "gitHead": "b729b798c4d85f8ba7a75070864599ce95cd3bf9"
+  "devDependencies": {}
 }

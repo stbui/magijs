@@ -1,6 +1,6 @@
 import fs from 'fs';
-import path from 'path';
 import minimist from 'minimist';
+import path from 'path';
 import { NodeProxy } from './proxy';
 
 function start(config) {

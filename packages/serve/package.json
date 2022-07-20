@@ -1,0 +1,36 @@
+{
+  "name": "@magijs/node-serve",
+  "version": "0.0.1-alpha.10",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "private": "true",
+  "bin": {
+    "node-serve": "bin/index.js"
+  },
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "compression": "^1.7.4",
+    "connect-history-api-fallback": "^1.6.0",
+    "http-proxy-middleware": "^1.0.6",
+    "minimist": "^1.2.5",
+    "serve-static": "^1.15.0",
+    "finalhandler": "^1.2.0"
+  }
+}

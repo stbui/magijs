@@ -1,0 +1,24 @@
+{
+  "name": "@magi/compiled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "boy": "boy-build",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
+  "devDependencies": {
+    "@magi/boy-build": "*"
+  },
+  "pack": []
+}

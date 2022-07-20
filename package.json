@@ -42,12 +42,12 @@
     "commit-msg": "node scripts/verifyCommit.js"
   },
   "devDependencies": {
-    "@types/node": "^18.0.0",
-    "chalk": "5.0.1",
-    "lerna": "^5.1.6",
+    "@types/node": "^18.0.4",
+    "chalk": "^4.1.2",
+    "lerna": "^5.1.8",
     "lint-staged": "^13.0.3",
     "prettier": "^2.5.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.5.4"
   }
 }

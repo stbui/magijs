@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+const childProcess = require('child_process');
+
+try {
+  childProcess.spawn('magi', ['run', 'lint'], {
+    stdio: 'inherit',
+  });
+} catch (error) {
+  console.log(error.stdout.toString());
+  process.exit(1);
+}
