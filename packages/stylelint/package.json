@@ -1,5 +1,5 @@
 {
-  "name": "@magi/stylelint",
+  "name": "@magijs/stylelint",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magi/compiled": "*",
+    "@magijs/compiled": "*",
     "stylelint-checkstyle-formatter": "^0.1.2",
     "stylelint": "^14.9.1"
   }

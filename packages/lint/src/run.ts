@@ -1,6 +1,6 @@
-import { run as prettierRun } from '@magi/prettier';
-import { run as stylelintRun } from '@magi/stylelint';
-import { run as eslintRun } from '@magi/eslint';
+import { run as prettierRun } from '@magijs/prettier';
+import { run as stylelintRun } from '@magijs/stylelint';
+import { run as eslintRun } from '@magijs/eslint';
 
 export async function run(argv?) {
   console.log('prettier start');

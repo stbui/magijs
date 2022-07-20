@@ -4,7 +4,7 @@ export default (api: IApi) => {
   api.modifyBabelPresetOpts(opts => {
     const importLibs = [
       {
-        libraryName: '@magi/magi/antd',
+        libraryName: '@magijs/magi/antd',
         libraryDirectory: 'es',
         style: true,
       },

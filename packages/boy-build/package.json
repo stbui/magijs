@@ -1,9 +1,8 @@
 {
-  "name": "@magi/boy-build",
+  "name": "@magijs/boy-build",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private": "true",
   "bin": {
     "boy-build": "bin/boy-build.js"
   },
@@ -13,6 +12,11 @@
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch"
   },
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {},

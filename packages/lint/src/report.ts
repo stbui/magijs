@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
-import { formatter as stylelintStyle } from '@magi/stylelint';
-import { formatter as eslintStyle } from '@magi/eslint';
+import { formatter as stylelintStyle } from '@magijs/stylelint';
+import { formatter as eslintStyle } from '@magijs/eslint';
 
 export function report() {
   const formatter = eslintStyle();

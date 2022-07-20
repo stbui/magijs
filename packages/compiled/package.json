@@ -1,9 +1,8 @@
 {
-  "name": "@magi/compiled",
+  "name": "@magijs/compiled",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private": "true",
   "scripts": {
     "boy": "boy-build",
     "build-cjs": "rimraf ./lib && tsc",
@@ -18,7 +17,7 @@
     "bin"
   ],
   "devDependencies": {
-    "@magi/boy-build": "*"
+    "@magijs/boy-build": "*"
   },
   "pack": []
 }
