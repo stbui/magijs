@@ -16,6 +16,9 @@
     "esm",
     "bin"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@magijs/boy-build": "*"
   },

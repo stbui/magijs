@@ -18,6 +18,9 @@
   ],
   "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@magijs/compiled": "*",
     "stylelint-checkstyle-formatter": "^0.1.2",

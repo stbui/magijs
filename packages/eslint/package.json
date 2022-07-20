@@ -16,6 +16,9 @@
     "esm",
     "bin"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

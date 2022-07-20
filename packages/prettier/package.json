@@ -22,5 +22,8 @@
   "dependencies": {
     "prettier": "^2.7.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {}
 }

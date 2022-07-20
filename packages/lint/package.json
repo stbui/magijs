@@ -37,5 +37,8 @@
     "@magijs/stylelint": "1.0.0",
     "chalk": "^4.1.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "gitHead": "2f6b21a77a4e3bcdeddd085267d3403d13cbb77f"
 }
