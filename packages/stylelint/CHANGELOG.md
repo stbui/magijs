@@ -8,8 +8,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
+* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 * wi pwip ([ceddc86](https://github.com/stbui/magijs/commit/ceddc864a743fb583338be81bc72fdbf6c0b164a))
-* wip ([84c3dd2](https://github.com/stbui/magijs/commit/84c3dd2463238225a5f955a656fb88eadda5a2d1))
+* wip ([a30986b](https://github.com/stbui/magijs/commit/a30986b8bc3ed28fbda240a1885803345d15af7d))
 
 
 
@@ -20,8 +21,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
+* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 * wi pwip ([ceddc86](https://github.com/stbui/magijs/commit/ceddc864a743fb583338be81bc72fdbf6c0b164a))
-* wip ([84c3dd2](https://github.com/stbui/magijs/commit/84c3dd2463238225a5f955a656fb88eadda5a2d1))
+* wip ([a30986b](https://github.com/stbui/magijs/commit/a30986b8bc3ed28fbda240a1885803345d15af7d))
 
 
 
@@ -32,5 +34,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
+* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 * wi pwip ([ceddc86](https://github.com/stbui/magijs/commit/ceddc864a743fb583338be81bc72fdbf6c0b164a))
-* wip ([84c3dd2](https://github.com/stbui/magijs/commit/84c3dd2463238225a5f955a656fb88eadda5a2d1))
+* wip ([a30986b](https://github.com/stbui/magijs/commit/a30986b8bc3ed28fbda240a1885803345d15af7d))
