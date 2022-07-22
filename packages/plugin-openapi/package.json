@@ -1,0 +1,26 @@
+{
+  "name": "@magijs/plugin-openapi",
+  "version": "0.0.1-alpha.14",
+  "description": "OpenAPI",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@magijs/compiled": "^0.0.1-alpha.14",
+    "@magijs/openapi": "^0.0.1-alpha.13",
+    "swagger-ui-react": "^3.44.0"
+  }
+}
