@@ -1,6 +1,6 @@
 {
   "name": "@magijs/cli",
-  "version": "0.0.1-alpha.10",
+  "version": "0.0.1-alpha.14",
   "description": "命令行工具",
   "license": "ISC",
   "bin": {
