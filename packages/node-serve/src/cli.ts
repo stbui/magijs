@@ -1,5 +1,5 @@
 import fs from 'fs';
-import minimist from 'minimist';
+import minimist from '@magijs/compiled/minimist';
 import path from 'path';
 import { NodeProxy } from './proxy';
 

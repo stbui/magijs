@@ -22,6 +22,7 @@
     "access": "public"
   },
   "dependencies": {
+    "@magijs/compiled": "^0.0.1-alpha.14",
     "@magijs/umi": "0.0.1-alpha.10",
     "npm-updater": "3.0.3"
   },

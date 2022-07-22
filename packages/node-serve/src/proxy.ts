@@ -1,7 +1,7 @@
-import compression from 'compression';
-import history from 'connect-history-api-fallback';
-import express from 'express';
-import { createProxyMiddleware } from 'http-proxy-middleware';
+import compression from '@magijs/compiled/compression';
+import history from '@magijs/compiled/connect-history-api-fallback';
+import express from '@magijs/compiled/express';
+import { createProxyMiddleware } from '@magijs/compiled/http-proxy-middleware';
 
 interface INodeProxyconfig {
   /**

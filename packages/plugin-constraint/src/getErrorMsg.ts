@@ -1,8 +1,8 @@
 import { codeFrameColumns } from '@babel/code-frame';
-import link from 'terminal-link';
-import { utils } from 'umi';
+import link from '@magijs/compiled/terminal-link';
+import chalk from '@magijs/compiled/chalk';
 
-const { red, green, white, bold } = utils.chalk;
+const { red, green, white, bold } = chalk;
 
 export function getErrorMsg(opts: { ruleId: string; rule }, args: { why?: string; path?: any; node?: any } = {}) {
     const ruleLink = `http://docs.test.za.biz/advanced/constraint#${opts.ruleId}`;
@@ -19,13 +19,13 @@ export function getErrorMsg(opts: { ruleId: string; rule }, args: { why?: string
         );
     }
     msg.push('');
-    msg.push(utils.chalk.red(`[Error] 强约束规则 [${link(opts.ruleId, ruleLink)}] 校验失败！`));
+    msg.push(chalk.red(`[Error] 强约束规则 [${link(opts.ruleId, ruleLink)}] 校验失败！`));
     msg.push('');
-    msg.push(utils.chalk.red(`  - ${utils.chalk.bold(opts.rule.description)}${args.why ? `但是，${args.why}` : ''}`));
+    msg.push(chalk.red(`  - ${chalk.bold(opts.rule.description)}${args.why ? `但是，${args.why}` : ''}`));
     if (opts.rule.why) {
-        msg.push(utils.chalk.red(`  - 为什么要有这条规则？${opts.rule.why}`));
+        msg.push(chalk.red(`  - 为什么要有这条规则？${opts.rule.why}`));
     }
-    msg.push(utils.chalk.red(`  - 详见：${ruleLink}`));
+    msg.push(chalk.red(`  - 详见：${ruleLink}`));
     msg.push('');
 
     msg.push(

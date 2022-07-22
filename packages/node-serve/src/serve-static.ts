@@ -1,5 +1,5 @@
-import serveStatic from 'serve-static';
-import finalhandler from 'finalhandler';
+import serveStatic from '@magijs/compiled/serve-static';
+import finalhandler from '@magijs/compiled/finalhandler';
 import http from 'http';
 import { join } from 'path';
 

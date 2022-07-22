@@ -19,9 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "comment-json": "^4.1.0",
-    "git-local-info": "^1.0.1",
-    "terminal-link": "^2.1.1"
+    "@magijs/compiled": "^0.0.1-alpha.14"
   },
   "gitHead": "b729b798c4d85f8ba7a75070864599ce95cd3bf9"
 }

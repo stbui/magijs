@@ -1,10 +1,10 @@
 import path from 'path';
 import fs from 'fs';
-import glob from 'glob';
-import nunjucks from 'nunjucks';
 import rimraf from 'rimraf';
-import reserved_words from 'reserved-words';
-import { flatten, uniqBy } from 'lodash';
+import glob from '@magijs/compiled/glob';
+import nunjucks from '@magijs/compiled/nunjucks';
+import reserved_words from '@magijs/compiled/reserved-words';
+import { flatten, uniqBy } from '@magijs/compiled/lodash';
 
 import { writeFile, stripDot } from './util';
 import log from './log';

@@ -32,10 +32,10 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/eslint": "1.0.0",
-    "@magijs/prettier": "1.0.0",
-    "@magijs/stylelint": "1.0.0",
-    "chalk": "^4.1.2"
+    "@magijs/eslint": "^0.0.1-alpha.14",
+    "@magijs/prettier": "^0.0.1-alpha.14",
+    "@magijs/stylelint": "^0.0.1-alpha.14",
+    "@magijs/compiled": "^0.0.1-alpha.14"
   },
   "publishConfig": {
     "access": "public"

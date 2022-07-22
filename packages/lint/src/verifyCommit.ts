@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import chalk from '@magijs/compiled/chalk';
 
 export function verifyCommit() {
   const msgPath = process.env.GIT_PARAMS || process.env.HUSKY_GIT_PARAMS;

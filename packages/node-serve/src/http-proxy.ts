@@ -1,8 +1,8 @@
-import compression from 'compression';
-import history from 'connect-history-api-fallback';
-import cors from 'cors';
-import express from 'express';
-import { createProxyMiddleware } from 'http-proxy-middleware';
+import compression from '@magijs/compiled/compression';
+import express from '@magijs/compiled/express';
+import history from '@magijs/compiled/connect-history-api-fallback';
+import cors from '@magijs/compiled/cors';
+import { createProxyMiddleware } from '@magijs/compiled/http-proxy-middleware';
 
 export function httpProxy(options, publicPath?, staticDir = 'dist') {
   if (!options) {

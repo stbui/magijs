@@ -1,6 +1,6 @@
-import nodefetch from 'node-fetch';
-import swagger2openapi from 'swagger2openapi';
-import { OperationObject } from 'openapi3-ts';
+import nodefetch from '@magijs/compiled/node-fetch';
+import swagger2openapi from '@magijs/compiled/swagger2openapi';
+import { OperationObject } from '@magijs/compiled/openapi3-ts';
 
 import log from './log';
 import { ServiceGenerator } from './serviceGenerator';

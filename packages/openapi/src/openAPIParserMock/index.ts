@@ -1,4 +1,4 @@
-import memoizee from 'memoizee';
+import memoizee from '@magijs/compiled/memoizee';
 import primitives from './primitives';
 import { objectify, inferSchema, get, normalizeArray } from './utils';
 

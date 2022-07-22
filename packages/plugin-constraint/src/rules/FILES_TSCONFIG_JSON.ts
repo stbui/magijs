@@ -1,6 +1,6 @@
 import { join } from 'path';
 import { existsSync, readFileSync } from 'fs';
-import { parse } from 'comment-json';
+import { parse } from '@magijs/compiled/comment-json';
 
 export function validate(tsconfig: any) {
     if (!tsconfig.compilerOptions) {

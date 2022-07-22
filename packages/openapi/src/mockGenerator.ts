@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import mockjs from 'mockjs';
+import mockjs from '@magijs/compiled/mockjs';
 import log from './log';
 import { prettierFile } from './util';
 import { OpenAPIGeneratorMockJs } from './openAPIParserMock';
