@@ -1,4 +1,5 @@
-import cli from 'prettier/cli';
+// import cli from 'prettier/cli';
+import cli from '@magijs/compiled/prettier';
 
 export async function run() {
   const config = require.resolve('./config');

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-za/scss'],
+  extends: ['stylelint-config-standard', 'stylelint-config-recommended-scss'],
   rules: {
     'at-rule-empty-line-before': null,
     'comment-empty-line-before': null,

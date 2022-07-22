@@ -3,21 +3,32 @@ const ncc = require('@vercel/ncc');
 const fs = require('fs');
 const path = require('path');
 
-Object.keys(pkg.devDependencies).map(dependencie => {
-  const modulePath = require.resolve(dependencie);
-  if (['@vercel/ncc', 'dts-packer'].includes(dependencie)) {
-    return;
-  }
+function bundle() {
+  Object.keys(pkg.devDependencies).map(dependencie => {
+    const modulePath = require.resolve(dependencie);
+    if (['@vercel/ncc', 'dts-packer'].includes(dependencie)) {
+      return;
+    }
 
-  console.log(modulePath);
+    build(modulePath, dependencie);
+  });
+}
 
-  ncc(modulePath, {
+function build(input, output) {
+  ncc(input, {
     minify: true,
   }).then(({ code, map, assets }) => {
-    // console.log(dependencie);
-    if (!fs.existsSync(dependencie)) {
-      fs.mkdirSync(dependencie);
+    if (!fs.existsSync(output)) {
+      fs.mkdirSync(output);
     }
-    fs.writeFileSync(path.join(dependencie, 'index.js'), code, { encoding: 'utf8' });
+    fs.writeFileSync(path.join(output, 'index.js'), code, { encoding: 'utf8' });
   });
-});
+}
+
+// bundle();
+
+// const modulePath = require.resolve('prettier/cli');
+// build(modulePath, 'prettier');
+
+// const modulePath = require.resolve('stylelint/lib/cli');
+// build(modulePath, 'stylelint');

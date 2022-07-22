@@ -9,7 +9,8 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "watch": "rimraf ./lib && tsc --watch"
+    "watch": "rimraf ./lib && tsc --watch",
+    "test": "node lib/cli.js"
   },
   "files": [
     "lib",
@@ -19,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^2.7.1"
+    "@magijs/compiled": "0.0.1-alpha.14"
   },
   "publishConfig": {
     "access": "public"

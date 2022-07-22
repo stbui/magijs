@@ -3,16 +3,21 @@ import minimist from '@magijs/compiled/minimist';
 import path from 'path';
 import { NodeProxy } from './proxy';
 
+function getConfigFile(pathFile) {
+  const configFile = path.join(process.cwd(), pathFile);
+
+  if (fs.existsSync(configFile)) {
+    return fs.readFileSync(configFile);
+  }
+  return {};
+}
+
 function start(config) {
   const DEPLOY_ENV = config.env || process.env.DEPLOY_ENV || 'prd';
-  const configFile = path.join(process.cwd(), config);
-
-  const configContent = fs.readFileSync(configFile);
-  // const proxyConfig = { dev: {}, test: {} };
-  const proxyContent = configContent[DEPLOY_ENV];
+  const proxy = getConfigFile(config.configFile)[DEPLOY_ENV];
 
   new NodeProxy({
-    proxy: proxyContent,
+    proxy: proxy,
     static: config.static,
     publicPath: config.publicPath,
   });

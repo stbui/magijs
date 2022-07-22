@@ -36,6 +36,7 @@
     "comment-json": "^4.1.0",
     "git-local-info": "^1.0.1",
     "terminal-link": "^2.1.1",
+    "stylelint": "^14.9.1",
     "@vercel/ncc": "^0.34.0",
     "dts-packer": "^0.0.3"
   }
