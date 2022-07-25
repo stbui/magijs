@@ -1,28 +1,25 @@
 {
   "name": "@magijs/eslint",
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.17",
   "description": "",
+  "license": "ISC",
+  "author": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
   "scripts": {
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch"
   },
-  "files": [
-    "lib",
-    "esm",
-    "bin"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@magijs/compiled": "0.0.1-alpha.16",
+    "@magijs/compiled": "^0.0.1-alpha.17",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "5.30.6",
     "eslint": "8.20.0",
@@ -32,5 +29,8 @@
     "eslint-plugin-jsx-a11y": "6.6.0",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

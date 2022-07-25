@@ -1,7 +1,15 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.17",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://git.zhonganinfo.com/zafe/magi-framework"
+  },
+  "author": {
+    "name": "王明",
+    "email": "wangming001@zhongan.com"
+  },
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -16,26 +24,18 @@
     "bin",
     "githooks"
   ],
-  "author": {
-    "name": "王明",
-    "email": "wangming001@zhongan.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://git.zhonganinfo.com/zafe/magi-framework"
-  },
   "scripts": {
-    "preinstall": "node ./lib/hooks/index.js",
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "preinstall": "node ./lib/hooks/index.js",
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "0.0.1-alpha.16",
-    "@magijs/eslint": "0.0.1-alpha.16",
-    "@magijs/prettier": "0.0.1-alpha.16",
-    "@magijs/stylelint": "0.0.1-alpha.16"
+    "@magijs/compiled": "^0.0.1-alpha.17",
+    "@magijs/eslint": "^0.0.1-alpha.17",
+    "@magijs/prettier": "^0.0.1-alpha.17",
+    "@magijs/stylelint": "^0.0.1-alpha.17"
   },
   "publishConfig": {
     "access": "public"

@@ -3,160 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.0.1-alpha.16](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.16) (2022-07-25)
-
+## [0.0.1-alpha.17](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.17) (2022-07-25)
 
 ### Features
 
-* 更新version ([4e34e33](https://github.com/stbui/magijs/commit/4e34e33abb9d44053fb832116ee9f42f8a267083))
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-* wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
+- 更新 version ([4e34e33](https://github.com/stbui/magijs/commit/4e34e33abb9d44053fb832116ee9f42f8a267083))
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
+- wip ([d30e5db](https://github.com/stbui/magijs/commit/d30e5db73b48cd1147969835a45a784a464cbdb1))
+- wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
 
+## [0.0.1-alpha.16](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.16) (2022-07-25)
 
+### Features
 
-
+- 更新 version ([4e34e33](https://github.com/stbui/magijs/commit/4e34e33abb9d44053fb832116ee9f42f8a267083))
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
+- wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
 
 ## [0.0.1-alpha.15](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.15) (2022-07-22)
 
-
 ### Features
 
-* 更新version ([4e34e33](https://github.com/stbui/magijs/commit/4e34e33abb9d44053fb832116ee9f42f8a267083))
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-* wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
-
-
-
-
+- 更新 version ([4e34e33](https://github.com/stbui/magijs/commit/4e34e33abb9d44053fb832116ee9f42f8a267083))
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
+- wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
 
 ## [0.0.1-alpha.14](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.14) (2022-07-20)
 
-
 ### Features
 
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-* wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
-
-
-
-
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
+- wip ([a6f7b79](https://github.com/stbui/magijs/commit/a6f7b79875033eea566ea1d37a346c18a436c123))
 
 ## [0.0.1-alpha.13](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.13) (2022-07-20)
 
-
 ### Features
 
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-
-
-
-
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 
 ## [0.0.1-alpha.12](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.12) (2022-07-20)
 
-
 ### Features
 
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-
-
-
-
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 
 ## [0.0.1-alpha.11](https://github.com/stbui/magijs/compare/v0.0.1-alpha.10...v0.0.1-alpha.11) (2022-07-20)
 
-
 ### Features
 
-* 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
-
-
-
-
+- 新增模块 ([34bdf68](https://github.com/stbui/magijs/commit/34bdf68b61e8048f0e16641d05cf313bf842b41d))
 
 ## [0.0.1-alpha.10](https://github.com/stbui/magijs/compare/v0.0.1-alpha.9...v0.0.1-alpha.10) (2022-07-04)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## [0.0.1-alpha.9](https://github.com/stbui/magijs/compare/v0.0.1-alpha.8...v0.0.1-alpha.9) (2022-06-28)
 
 **Note:** Version bump only for package @magijs/data-collection
-
-
-
-
 
 ## [0.0.1-alpha.8](https://github.com/stbui/magijs/compare/v0.0.1-alpha.7...v0.0.1-alpha.8) (2022-06-28)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## [0.0.1-alpha.7](https://github.com/stbui/magijs/compare/v0.0.1-alpha.6...v0.0.1-alpha.7) (2022-06-28)
 
 **Note:** Version bump only for package @magijs/data-collection
-
-
-
-
 
 ## [0.0.1-alpha.6](https://github.com/stbui/magijs/compare/v0.0.1-alpha.5...v0.0.1-alpha.6) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## [0.0.1-alpha.5](https://github.com/stbui/magijs/compare/v0.0.1-alpha.4...v0.0.1-alpha.5) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
-
-
-
-
 
 ## [0.0.1-alpha.4](https://github.com/stbui/magijs/compare/v0.0.1-alpha.3...v0.0.1-alpha.4) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## [0.0.1-alpha.3](https://github.com/stbui/magijs/compare/v0.0.1-alpha.2...v0.0.1-alpha.3) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
-
-
-
-
 
 ## [0.0.1-alpha.2](https://github.com/stbui/magijs/compare/v0.0.1-alpha.1...v0.0.1-alpha.2) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## [0.0.1-alpha.1](https://github.com/stbui/magijs/compare/v0.0.1-alpha.0...v0.0.1-alpha.1) (2022-06-27)
 
 **Note:** Version bump only for package @magijs/data-collection
 
-
-
-
-
 ## 0.0.1-alpha.0 (2022-06-27)
-
 
 ### Features
 
-* init ([0ba9bce](https://github.com/stbui/magijs/commit/0ba9bceb41d6ce04c2171a12a0af8daef3ca02bf))
+- init ([0ba9bce](https://github.com/stbui/magijs/commit/0ba9bceb41d6ce04c2171a12a0af8daef3ca02bf))

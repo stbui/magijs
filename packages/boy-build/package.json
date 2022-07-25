@@ -1,27 +1,24 @@
 {
   "name": "@magijs/boy-build",
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.17",
   "description": "",
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "bin": {
     "boy-build": "bin/boy-build.js"
-  },
-  "scripts": {
-    "build": "yarn run build-cjs && yarn run build-esm",
-    "build-cjs": "rimraf ./lib && tsc",
-    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "watch": "rimraf ./lib && tsc --watch"
   },
   "files": [
     "lib",
     "esm",
     "bin"
   ],
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-json": "^4.1.0",
@@ -30,5 +27,8 @@
     "is-core-module": "^2.9.0",
     "resolve": "^1.22.1",
     "rollup": "^2.75.7"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

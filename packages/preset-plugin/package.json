@@ -1,31 +1,31 @@
 {
   "name": "@magijs/preset-plugin",
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.17",
   "description": "插件集",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm",
+    "bin"
+  ],
   "scripts": {
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "watch": "rimraf ./lib && tsc --watch"
   },
+  "dependencies": {
+    "@magijs/compiled": "^0.0.1-alpha.17",
+    "@umijs/max": "4.0.8",
+    "@umijs/plugin-sass": "1.1.1"
+  },
   "peerDependencies": {
     "umi": "3.x"
   },
-  "files": [
-    "lib",
-    "esm",
-    "bin"
-  ],
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@magijs/compiled": "0.0.1-alpha.16",
-    "@umijs/max": "4.0.8",
-    "@umijs/plugin-sass": "1.1.1"
   },
   "gitHead": "b729b798c4d85f8ba7a75070864599ce95cd3bf9"
 }

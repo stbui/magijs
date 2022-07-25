@@ -1,27 +1,27 @@
 {
   "name": "@magijs/data-collection",
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.17",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "yarn run build-cjs && yarn run build-esm",
-    "build-cjs": "rimraf ./lib && tsc",
-    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "watch": "rimraf ./lib && tsc --watch",
-    "test": "node ./lib/index.js"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "lib",
     "esm",
     "bin"
   ],
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "test": "node ./lib/index.js",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
   "dependencies": {
     "request": "2.88.2"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "b729b798c4d85f8ba7a75070864599ce95cd3bf9"
 }
