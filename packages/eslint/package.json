@@ -1,6 +1,6 @@
 {
   "name": "@magijs/eslint",
-  "version": "0.0.1-alpha.14",
+  "version": "0.0.1-alpha.16",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -22,7 +22,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magijs/compiled": "0.0.1-alpha.14",
+    "@magijs/compiled": "0.0.1-alpha.16",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "5.30.6",
     "eslint": "8.20.0",

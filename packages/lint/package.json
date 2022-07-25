@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.14",
+  "version": "0.0.1-alpha.16",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -32,10 +32,10 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/eslint": "^0.0.1-alpha.14",
-    "@magijs/prettier": "^0.0.1-alpha.14",
-    "@magijs/stylelint": "^0.0.1-alpha.14",
-    "@magijs/compiled": "^0.0.1-alpha.14"
+    "@magijs/compiled": "0.0.1-alpha.16",
+    "@magijs/eslint": "0.0.1-alpha.16",
+    "@magijs/prettier": "0.0.1-alpha.16",
+    "@magijs/stylelint": "0.0.1-alpha.16"
   },
   "publishConfig": {
     "access": "public"

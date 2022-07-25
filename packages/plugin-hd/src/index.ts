@@ -1,13 +1,12 @@
 import { join } from 'path';
 import px2rem, { IOpts } from 'postcss-plugin-px2rem';
-import { IApi } from 'umi';
 
 export interface HdOptions {
   theme?: object;
   px2rem?: IOpts;
 }
 
-export default (api: IApi) => {
+export default api => {
   const {
     utils: { getFile },
   } = api;

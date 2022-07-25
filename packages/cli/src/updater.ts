@@ -33,7 +33,7 @@ export class Updater {
       return chalk.yellow(
         ` 检测到 magi 新版本: ${chalk.magenta(current)}(${isGlobal ? '全局' : '本地'}版本) → ${chalk.magenta(
           version
-        )}(最新版本)\n   你可以执行 ${str}${isGlobal ? chalk.red(' @magijs/magi -g') : ''} 来更新版本。`
+        )}(最新版本)\n   你可以执行 ${str}${isGlobal ? chalk.red(' @magijs/magi') : ''} 来更新版本。`
       );
     };
 

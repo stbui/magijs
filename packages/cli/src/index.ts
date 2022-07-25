@@ -1,4 +1,4 @@
-import { Middleware } from '@magijs/umi';
+import { Middleware } from './umi4';
 
 new Middleware({
   presets: '@magijs/preset-plugin',

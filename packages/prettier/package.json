@@ -1,6 +1,6 @@
 {
   "name": "@magijs/prettier",
-  "version": "0.0.1-alpha.14",
+  "version": "0.0.1-alpha.16",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -20,7 +20,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@magijs/compiled": "0.0.1-alpha.14"
+    "@magijs/compiled": "0.0.1-alpha.16"
   },
   "publishConfig": {
     "access": "public"
