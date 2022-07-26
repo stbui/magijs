@@ -18,11 +18,11 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.17",
-    "@umijs/max": "4.0.8",
+    "@umijs/plugins": "4.0.8",
     "@umijs/plugin-sass": "1.1.1"
   },
   "peerDependencies": {
-    "umi": "3.x"
+    "umi": "4.x"
   },
   "publishConfig": {
     "access": "public"

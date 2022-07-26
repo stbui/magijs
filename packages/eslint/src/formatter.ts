@@ -1,15 +1,16 @@
-import { CLIEngine } from 'eslint';
+import { ESLint } from 'eslint';
 
-export const formatter = () => {
+export async function formatter() {
   const config = require('./config');
 
-  const cli = new CLIEngine({
+  const cli = new ESLint({
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
     baseConfig: config,
   });
 
-  const reportFiles = cli.executeOnFiles(['src']);
-  const formatter = cli.getFormatter('checkstyle');
+  const results = await cli.lintFiles(['src/**/*.ts']);
+  const formatter = await cli.loadFormatter('checkstyle');
+  const resultText = formatter.format(results);
 
-  return formatter(reportFiles.results);
-};
+  return resultText;
+}

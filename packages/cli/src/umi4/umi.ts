@@ -1,5 +1,5 @@
-import { fork } from 'child_process';
 import DataCollect from '@magijs/data-collection';
+import { fork } from 'child_process';
 import { Rewrite } from './rewrite';
 
 export class Middleware {

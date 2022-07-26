@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.17",
-    "@magijs/data-collection": "0.0.1-alpha.15",
+    "@magijs/data-collection": "0.0.1-alpha.17",
+    "@magijs/lint": "0.0.1-alpha.17",
+    "@magijs/preset-plugin": "0.0.1-alpha.17",
     "npm-updater": "3.0.3",
     "umi": "4.0.8"
   },

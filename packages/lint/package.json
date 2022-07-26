@@ -28,7 +28,7 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "preinstall": "node ./lib/hooks/index.js",
+    "install": "node ./lib/hooks/index.js",
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
