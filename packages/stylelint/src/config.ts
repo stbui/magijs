@@ -1,4 +1,5 @@
 module.exports = {
+  customSyntax: 'scss',
   extends: ['stylelint-config-standard', 'stylelint-config-recommended-scss'],
   rules: {
     'at-rule-empty-line-before': null,

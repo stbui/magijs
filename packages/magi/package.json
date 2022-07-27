@@ -12,6 +12,7 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
+    "antd": "^4.21.7",
     "umi": "4.0.8"
   },
   "publishConfig": {

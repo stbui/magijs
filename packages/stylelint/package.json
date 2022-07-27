@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.18",
+    "postcss-scss": "^4.0.4",
     "stylelint": "^14.9.1",
     "stylelint-checkstyle-formatter": "^0.1.2",
     "stylelint-config-recommended-scss": "^7.0.0",

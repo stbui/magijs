@@ -2,7 +2,8 @@
 const childProcess = require('child_process');
 
 try {
-  childProcess.spawn('magi', ['run', 'lint'], {
+  const lint = require.resolve('@magijs/lint/bin');
+  childProcess.fork(lint, [], {
     stdio: 'inherit',
   });
 } catch (error) {

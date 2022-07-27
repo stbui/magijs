@@ -20,7 +20,8 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.18"
+    "@magijs/compiled": "^0.0.1-alpha.18",
+    "prettier": "^2.7.1"
   },
   "publishConfig": {
     "access": "public"
