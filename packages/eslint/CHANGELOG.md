@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.20](https://github.com/stbui/magijs/compare/v0.0.1-alpha.19...v0.0.1-alpha.20) (2022-07-28)
+
+
+### Features
+
+* wip ([318b1c4](https://github.com/stbui/magijs/commit/318b1c461cf03dcf56cf46583b530c7d98e4ba54))
+
+
+
+
+
 ## [0.0.1-alpha.19](https://github.com/stbui/magijs/compare/v0.0.1-alpha.18...v0.0.1-alpha.19) (2022-07-27)
 
 
