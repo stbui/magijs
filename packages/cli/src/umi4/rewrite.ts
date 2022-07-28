@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 
 export class Rewrite {
@@ -32,20 +32,14 @@ export class Rewrite {
 
     try {
       // 70行
-      const file = require.resolve('@umijs/core/lib/Service/getPaths');
-      this.replace(/\.umi/g, `.${this._alias}`, file);
+      const file = require.resolve('umi/dist/constants');
+      this.replace(/\umi/g, `.${this._alias}`, file);
 
-      // 83行
-      const file2 = require.resolve('@umijs/core/lib/Config/Config');
-      this.replace(/\.umirc/g, `.${this._alias}rc`, file2);
+      const dev = require.resolve('@umijs/preset-umi/dist/commands/dev/dev');
+      this.replace('import_utils.logger.info', '//', dev);
 
-      // getBabelOpts
-      const file3 = require.resolve('@umijs/bundler-utils/lib/getBabelOpts');
-      this.replace(/\.umi/g, `.${this._alias}rc`, file3);
-
-      // const file4 = require.resolve('@umijs/preset-built-in/lib/plugins/features/umiInfo');
-      // const info = readFileSync(path.join(__dirname, './umiInfo.js'));
-      // writeFileSync(file4, info, 'utf-8');
+      const build = require.resolve('@umijs/preset-umi/dist/commands/build');
+      this.replace('import_utils.logger.info', '//', build);
     } catch (e) {
       console.error(`[${this._alias}] 内核文件风险提示`);
     }
