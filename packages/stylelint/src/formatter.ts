@@ -7,7 +7,7 @@ export const formatter = () => {
   return stylelint.lint({
     files: 'src/**/*.scss',
     formatter: stylelintResults => checkstyleFormatter(stylelintResults),
-    syntax: 'scss',
+    // syntax: 'scss',
     config: config,
   });
 };
