@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.24](https://github.com/stbui/magijs/compare/v0.0.1-alpha.23...v0.0.1-alpha.24) (2022-08-03)
+
+**Note:** Version bump only for package @magijs/magi
+
+
+
+
+
 ## [0.0.1-alpha.23](https://github.com/stbui/magijs/compare/v0.0.1-alpha.22...v0.0.1-alpha.23) (2022-08-03)
 
 **Note:** Version bump only for package @magijs/magi

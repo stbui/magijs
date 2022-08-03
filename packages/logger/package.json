@@ -1,6 +1,6 @@
 {
   "name": "@magijs/logger",
-  "version": "0.0.1-alpha.23",
+  "version": "0.0.1-alpha.24",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -21,5 +21,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "b58534aa69d980966c8c2c979efd4d6fff1b3aaa"
 }

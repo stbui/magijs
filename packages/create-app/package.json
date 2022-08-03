@@ -1,6 +1,6 @@
 {
   "name": "@magijs/create-app",
-  "version": "0.0.1-alpha.23",
+  "version": "0.0.1-alpha.24",
   "description": "初始化项目模板",
   "license": "ISC",
   "main": "lib/index.js",
@@ -33,5 +33,5 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "gitHead": "2f6b21a77a4e3bcdeddd085267d3403d13cbb77f"
+  "gitHead": "b58534aa69d980966c8c2c979efd4d6fff1b3aaa"
 }
