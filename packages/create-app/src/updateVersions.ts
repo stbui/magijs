@@ -13,8 +13,8 @@ for (const t of templates) {
   let version = require('../package.json').version;
   // const version = '0.0.17';
 
-  pkg.devDependencies['@magi/cli'] = `^` + version;
-  pkg.dependencies['@magi/magi'] = `^` + version;
+  pkg.devDependencies['@magijs/cli'] = `^` + version;
+  pkg.dependencies['@magijs/magi'] = `^` + version;
 
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
 }

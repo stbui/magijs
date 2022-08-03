@@ -24,12 +24,12 @@ export async function run(argv?) {
     return;
   }
 
+  console.log('[magi]:', '开始执行 prettier');
+  await prettierRun();
+
   console.log('[magi]:', '开始执行 stylelint');
   await stylelintRun();
 
   console.log('[magi]:', '开始执行 eslint');
   await eslintRun();
-
-  console.log('[magi]:', '开始执行 prettier');
-  await prettierRun();
 }
