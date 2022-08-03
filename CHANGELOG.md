@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.21](https://github.com/stbui/magijs/compare/v0.0.1-alpha.20...v0.0.1-alpha.21) (2022-08-03)
+
+
+### Features
+
+* eslint error ([3a2fda8](https://github.com/stbui/magijs/commit/3a2fda8fcdde93e6ffd00cb2a40d1925aab49b49))
+* wip ([ec68a9d](https://github.com/stbui/magijs/commit/ec68a9de797d8337f6ed9a2d7f5d9e551e103d2f))
+* wip ([b21cf33](https://github.com/stbui/magijs/commit/b21cf331dff55003068e354ece0b21f5eb811a8a))
+* wip ([3b2a964](https://github.com/stbui/magijs/commit/3b2a964f5267ea6afa1333a75c901f77b4d0a0fa))
+
+
+
+
+
 ## [0.0.1-alpha.20](https://github.com/stbui/magijs/compare/v0.0.1-alpha.19...v0.0.1-alpha.20) (2022-07-28)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.21](https://github.com/stbui/magijs/compare/v0.0.1-alpha.20...v0.0.1-alpha.21) (2022-08-03)
+
+
+### Features
+
+* wip ([3b2a964](https://github.com/stbui/magijs/commit/3b2a964f5267ea6afa1333a75c901f77b4d0a0fa))
+
+
+
+
+
 ## [0.0.1-alpha.20](https://github.com/stbui/magijs/compare/v0.0.1-alpha.19...v0.0.1-alpha.20) (2022-07-28)
 
 **Note:** Version bump only for package @magijs/cli

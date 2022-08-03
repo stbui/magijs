@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.21](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.20...v0.0.1-alpha.21) (2022-08-03)
+
+
+### Features
+
+* eslint error ([3a2fda8](https://git.zhonganinfo.com/zafe/magi-framework/commits/3a2fda8fcdde93e6ffd00cb2a40d1925aab49b49))
+
+
+
+
+
 ## [0.0.1-alpha.20](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.19...v0.0.1-alpha.20) (2022-07-28)
 
 **Note:** Version bump only for package @magijs/lint
