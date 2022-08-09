@@ -1,10 +1,16 @@
 /node_modules
+/.env.local
+/.umirc.local.ts
+/config/config.local.ts
+/src/.umi
+/src/.umi-production
+/src/.umi-test
+/.umi
+/.umi-production
+/.umi-test
 /dist
-.DS_Store
-npm-debug.log*
+/.mfsu
 
-.zajs, 
-.zajs-production
 .magi
 .magirc
 .magi-production
@@ -12,9 +18,6 @@ npm-debug.log*
 .magirc
 .magi-production
 
-_dist/
-_package/
-mobile.config.js
 www/
 coverage
 report_zacc_eslint_js.xml
@@ -22,3 +25,4 @@ report_zacc_stylint_css.xml
 yarn-error.log
 yarn.lock
 package-lock.json
+

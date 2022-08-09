@@ -33,13 +33,17 @@ export class Rewrite {
     try {
       // 70行
       const file = require.resolve('umi/dist/constants');
-      this.replace(/\umi/g, `.${this._alias}`, file);
+      this.replace(/\umi/g, `${this._alias}`, file);
 
       const dev = require.resolve('@umijs/preset-umi/dist/commands/dev/dev');
       this.replace('import_utils.logger.info', '//', dev);
 
       const build = require.resolve('@umijs/preset-umi/dist/commands/build');
       this.replace('import_utils.logger.info', '//', build);
+
+      const ts = require.resolve('@umijs/preset-umi/dist/features/tmpFiles/tmpFiles')
+      this.replace('const umiTempDir = `${srcPrefix}.umi`;', 'const umiTempDir = `${srcPrefix}.magi`;', ts);
+
     } catch (e) {
       console.error(`[${this._alias}] 内核文件风险提示`);
     }
