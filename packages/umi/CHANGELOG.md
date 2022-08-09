@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.26](https://github.com/stbui/magijs/compare/v0.0.1-alpha.25...v0.0.1-alpha.26) (2022-08-09)
+
+**Note:** Version bump only for package @magijs/umi
+
+
+
+
+
 ## [0.0.1-alpha.25](https://github.com/stbui/magijs/compare/v0.0.1-alpha.24...v0.0.1-alpha.25) (2022-08-04)
 
 **Note:** Version bump only for package @magijs/umi
