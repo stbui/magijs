@@ -1,6 +1,6 @@
 {
   "name": "@magijs/cli",
-  "version": "0.0.1-alpha.26",
+  "version": "0.0.1-alpha.27",
   "description": "命令行工具",
   "license": "ISC",
   "bin": {
@@ -19,12 +19,12 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.26",
-    "@magijs/data-collection": "^0.0.1-alpha.26",
-    "@magijs/lint": "^0.0.1-alpha.26",
-    "@magijs/preset-plugin": "^0.0.1-alpha.26",
+    "@magijs/compiled": "^0.0.1-alpha.27",
+    "@magijs/data-collection": "^0.0.1-alpha.27",
+    "@magijs/lint": "^0.0.1-alpha.27",
+    "@magijs/preset-plugin": "^0.0.1-alpha.27",
     "npm-updater": "3.0.3",
-    "umi": "4.0.8"
+    "umi": "4.0.11"
   },
   "publishConfig": {
     "access": "public"

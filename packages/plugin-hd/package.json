@@ -1,6 +1,6 @@
 {
   "name": "@magijs/plugin-hd",
-  "version": "0.0.1-alpha.26",
+  "version": "0.0.1-alpha.27",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "postcss-plugin-px2rem": "0.8.1",
-    "umi": "3.5.26",
     "umi-hd": "5.0.1"
   },
   "gitHead": "f414c3710e4662a0fb08794059f5ccebf42951ef"

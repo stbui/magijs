@@ -25,11 +25,6 @@ export class Rewrite {
   }
 
   modify() {
-    // 已经修改源文件
-    if (this.hasLockFile()) {
-      return;
-    }
-
     try {
       // 70行
       const file = require.resolve('@umijs/core/lib/Service/getPaths');

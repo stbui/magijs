@@ -1,6 +1,6 @@
 {
   "name": "@magijs/magi",
-  "version": "0.0.1-alpha.26",
+  "version": "0.0.1-alpha.27",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "antd": "^4.21.7",
-    "umi": "4.0.8"
+    "umi": "4.0.11"
   },
   "publishConfig": {
     "access": "public"
