@@ -1,0 +1,27 @@
+{
+  "name": "@magijs/plugin-monitor-sentry",
+  "version": "0.0.1-alpha.27",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "dependencies": {
+    "@magijs/compiled": "^0.0.1-alpha.27",
+    "@sentry/browser": "7.10.0",
+    "@sentry/webpack-plugin": "1.19.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "2f6b21a77a4e3bcdeddd085267d3403d13cbb77f"
+}
