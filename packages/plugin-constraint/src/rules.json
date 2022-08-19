@@ -26,7 +26,7 @@
   "test": "===========================",
   "DEP_LIMITED_RESOLUTIONS": {
     "why": "在框架或依赖库中解决问题，采用治本的方式。",
-    "description": "不允许通过 resolutions 锁定我们自己维护的一方和二方库版本，包括 umi、antd、antd-mobile、qiankun、dva、umi-request，以及 @umijs、@ant-design、@magi 和 @za 前缀的库。"
+    "description": "不允许锁定我们自己维护的一方和二方库版本"
   },
   "DEP_WITH_VERSION": {
     "why": "避免依赖大版本升级或其他因素导致的 BREAK CHANGE 。",
