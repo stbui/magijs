@@ -15,7 +15,7 @@
     "examples/*"
   ],
   "useWorkspaces": true,
-  "version": "0.0.1-alpha.28",
+  "version": "0.0.1-alpha.29",
   "ignoreChanges": [
     "**/*.md",
     "**/*.test.ts",
