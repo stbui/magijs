@@ -1,5 +1,5 @@
 import { run } from '@magijs/lint';
-import { Middleware } from './umi4';
+import { Through } from './umi4';
 
 const args = process.argv.slice(2);
 
@@ -11,7 +11,7 @@ if (args.includes('component')) {
 } else {
   const { version } = require('../package');
 
-  new Middleware({
+  new Through({
     presets: '@magijs/preset-plugin',
     version,
   }).setup();

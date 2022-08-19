@@ -2,7 +2,7 @@ import DataCollect from '@magijs/data-collection';
 import { fork } from 'child_process';
 import { Rewrite } from './rewrite';
 
-export class Middleware {
+export class Through {
   private _presets?: string;
   private dataCollect: DataCollect;
   private _version = require('../../package').version;

@@ -13,6 +13,9 @@ export default () => {
       require.resolve('@umijs/plugins/dist/locale'),
       require.resolve('@umijs/plugins/dist/qiankun'),
       require.resolve('@umijs/plugins/dist/tailwindcss'),
+
+      // vue
+      require.resolve('@umijs/preset-vue'),
     ],
   };
 };
