@@ -1,0 +1,5 @@
+{
+  "*.ts?(x)": ["prettier --parser=typescript --write", "git add"],
+  "*.{js,jsx,ts,tsx}": ["eslint --fix", "git add"],
+  "*.{css,scss,less}": ["git add"]
+}

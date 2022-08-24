@@ -28,14 +28,14 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "install": "node ./lib/hooks/index.js",
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.29",
     "@magijs/eslint": "^0.0.1-alpha.29",
     "@magijs/prettier": "^0.0.1-alpha.29",
-    "@magijs/stylelint": "^0.0.1-alpha.29"
+    "@magijs/stylelint": "^0.0.1-alpha.29",
+    "lint-staged": "^13.0.3"
   },
   "publishConfig": {
     "access": "public"

@@ -12,12 +12,12 @@
     "magi": "magi"
   },
   "dependencies": {
-    "@magijs/magi": "^0.0.1-alpha.28",
+    "@magijs/magi": "^0.0.1-alpha.29",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
-    "@magijs/cli": "^0.0.1-alpha.28",
+    "@magijs/cli": "^0.0.1-alpha.29",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "cross-env": "^7.0.2",
