@@ -1,6 +1,6 @@
 {
   "name": "@magijs/create-app",
-  "version": "0.0.1-alpha.29",
+  "version": "0.0.1-alpha.30",
   "description": "初始化项目模板",
   "license": "ISC",
   "main": "lib/index.js",
