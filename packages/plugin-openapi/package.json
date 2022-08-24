@@ -1,6 +1,6 @@
 {
   "name": "@magijs/plugin-openapi",
-  "version": "0.0.1-alpha.30",
+  "version": "0.0.1-alpha.31",
   "description": "OpenAPI",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -15,8 +15,8 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.30",
-    "@magijs/openapi": "^0.0.1-alpha.30",
+    "@magijs/compiled": "^0.0.1-alpha.31",
+    "@magijs/openapi": "^0.0.1-alpha.31",
     "swagger-ui-react": "^3.44.0",
     "umi": "3.5.26"
   },
