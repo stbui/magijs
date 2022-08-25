@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-recommended-scss'],
+  extends: ['stylelint-config-standard'],
   rules: {
     'at-rule-empty-line-before': null,
     'comment-empty-line-before': null,
@@ -12,7 +12,6 @@ module.exports = {
       },
     ],
     'at-rule-no-unknown': null,
-    // 过于严格，暂时关闭
     'no-descending-specificity': null,
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],

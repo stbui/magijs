@@ -1,12 +1,27 @@
-import { config } from '@magijs/prettier';
-import lintStaged from 'lint-staged/lib/index';
-// // import { config} from '@magijs/stylelint';
-// // import { config } from '@magijs/eslint';
+import { fork } from 'child_process';
+import { writeFileSync } from 'fs';
+import { join, resolve } from 'path';
 
-lintStaged({
-  config: {
-    'src/**/*.{js,jsx,tsx,ts,scss,json}': [`prettier --parser=typescript --config ${config}  --write`, 'git add'],
-    // 'src/**/*.scss': ['stylelint --config --fix', 'git add'],
-    // 'src/**/*.{js,jsx,tsx,ts}': ['eslint --fix', 'git add'],
-  },
+const configPath = join(__dirname, './lintstagedrc.json');
+
+function createConfig() {
+  const eslintConfig = require.resolve('@magijs/eslint/lib/config');
+  const prettierConfig = require.resolve('@magijs/prettier/lib/config');
+  const stylelintConfig = require.resolve('@magijs/stylelint/lib/config');
+
+  const config = {
+    'src/**/*.{css,scss,less}': [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
+    'src/**/*.{js,jsx,tsx,ts}': [`eslint -c ${eslintConfig} --fix`, 'git add'],
+    'src/**/*.{js,jsx,ts,tsx,scss,json}': [`prettier --config ${prettierConfig}  --write`, 'git add'],
+  };
+
+  writeFileSync(configPath, JSON.stringify(config, null, 2), { encoding: 'utf-8' });
+}
+
+createConfig();
+
+const cli = resolve(require.resolve('lint-staged'), '../../bin/lint-staged.js');
+
+fork(cli, ['-c', configPath], {
+  stdio: 'inherit',
 });

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.32](https://github.com/stbui/magijs/compare/v0.0.1-alpha.31...v0.0.1-alpha.32) (2022-08-25)
+
+**Note:** Version bump only for package @magijs/node-serve
+
+
+
+
+
 ## [0.0.1-alpha.31](https://github.com/stbui/magijs/compare/v0.0.1-alpha.30...v0.0.1-alpha.31) (2022-08-24)
 
 **Note:** Version bump only for package @magijs/node-serve

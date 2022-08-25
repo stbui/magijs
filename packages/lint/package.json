@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.31",
+  "version": "0.0.1-alpha.32",
   "description": "",
   "repository": {
     "type": "git",
@@ -28,13 +28,14 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "install": "node ./lib/hooks/index.js",
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.31",
-    "@magijs/eslint": "^0.0.1-alpha.31",
-    "@magijs/prettier": "^0.0.1-alpha.31",
-    "@magijs/stylelint": "^0.0.1-alpha.31",
+    "@magijs/compiled": "^0.0.1-alpha.32",
+    "@magijs/eslint": "^0.0.1-alpha.32",
+    "@magijs/prettier": "^0.0.1-alpha.32",
+    "@magijs/stylelint": "^0.0.1-alpha.32",
     "lint-staged": "^13.0.3"
   },
   "publishConfig": {
