@@ -55,12 +55,12 @@ class DataCollect {
       Object.assign(this.options, gitInfo);
     }
 
-    // 是否存在package-lock.json
-        const lock = require(path.resolve(process.cwd(), 'package-lock.json'));
-        if (lock) {
-          // @ts-ignore
-          this.options.isPackageLock = true
-    }
+    // // 是否存在package-lock.json
+    // const lock = require(path.resolve(process.cwd(), 'package-lock.json'));
+    // if (lock) {
+    //   // @ts-ignore
+    //   this.options.isPackageLock = true;
+    // }
   }
 
   /**
