@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "author": "stbui <stbui@stbui.com>",
+  "scripts": {
+    "dev": "magi dev",
+    "build": "magi build",
+    "postinstall": "magi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "vue": "^3.2.36",
+    "@magijs/magi": "^0.0.1-alpha.33",
+    "@magijs/cli": "^0.0.1-alpha.33"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}

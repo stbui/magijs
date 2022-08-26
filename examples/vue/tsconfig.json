@@ -1,0 +1,6 @@
+{
+  "extends": "./src/.magi/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve"
+  }
+}
