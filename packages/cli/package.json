@@ -24,7 +24,8 @@
     "@magijs/lint": "^0.0.1-alpha.33",
     "@magijs/preset-plugin": "^0.0.1-alpha.33",
     "npm-updater": "3.0.3",
-    "umi": "4.0.11"
+    "umi": "4.0.11",
+    "@umijs/preset-vue":"4.0.15"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
-import { run } from '@magijs/lint';
-import { Through } from './umi4';
+import { run as runLint } from '@magijs/lint';
+import { run as runCli } from './cli';
 
 const args = process.argv.slice(2);
 
@@ -7,12 +7,7 @@ if (args.includes('component')) {
   // magi component xxxxx
   console.log('已关闭');
 } else if (args.includes('lint')) {
-  run(args);
+  runLint(args);
 } else {
-  const { version } = require('../package');
-
-  new Through({
-    presets: '@magijs/preset-plugin',
-    version,
-  }).setup();
+  runCli();
 }

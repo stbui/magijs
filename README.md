@@ -5,7 +5,7 @@
 ### 创建脚手架项目
 
 ```
-npm init @magijs/app@laster
+npm init @magijs/app@latest
 ```
 
 ```

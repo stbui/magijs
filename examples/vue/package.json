@@ -3,7 +3,6 @@
   "author": "stbui <stbui@stbui.com>",
   "scripts": {
     "dev": "magi dev",
-    "build": "magi build",
     "postinstall": "magi setup",
     "start": "npm run dev"
   },
