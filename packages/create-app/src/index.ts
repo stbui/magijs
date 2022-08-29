@@ -7,8 +7,8 @@ const argv = require('minimist')(process.argv.slice(2));
 const cwd = process.cwd();
 
 const TEMPLATES = [
-    yellow('magi'),
-    // green('mfd'),
+    yellow('react'),
+    green('vue'),
     // green('prophet'),
     // cyan('hfe-common'),
 ];
