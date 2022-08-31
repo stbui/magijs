@@ -17,6 +17,9 @@
 .magijs
 .magirc
 .magi-production
+/src/.magi
+/src/.magi-production
+/src/.magi-test
 
 www/
 coverage

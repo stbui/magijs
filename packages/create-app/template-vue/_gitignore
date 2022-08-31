@@ -1,7 +1,4 @@
 /node_modules
-/.env.local
-/.umirc.local.ts
-/config/config.local.ts
 /src/.umi
 /src/.umi-production
 /src/.umi-test
@@ -10,3 +7,12 @@
 /.umi-test
 /dist
 /.mfsu
+/.magi
+/.magi-production
+/.magi-test
+/src/.magi
+/src/.magi-production
+/src/.magi-test
+
+report_zacc_eslint_js.xml
+report_zacc_stylint_css.xml
