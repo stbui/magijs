@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.34](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
+
+
+### Features
+
+* cli ([29517c5](https://git.zhonganinfo.com/zafe/magi-framework/commits/29517c5cf037d4013f7609a3d28e56b5531a83c9))
+
+
+
+
+
 ## [0.0.1-alpha.33](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.32...v0.0.1-alpha.33) (2022-08-25)
 
 **Note:** Version bump only for package @magijs/lint

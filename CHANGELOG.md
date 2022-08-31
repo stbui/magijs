@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.34](https://github.com/stbui/magijs/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
+
+
+### Features
+
+* cli ([29517c5](https://github.com/stbui/magijs/commit/29517c5cf037d4013f7609a3d28e56b5531a83c9))
+* examples ([5324a71](https://github.com/stbui/magijs/commit/5324a71f32417211fb5f029bde8f90a1d19f2f8d))
+* vue ([9b6bbe2](https://github.com/stbui/magijs/commit/9b6bbe2f3ac2e1218b208bfe92b2e0e54f9eadd1))
+* wip ([48f9c06](https://github.com/stbui/magijs/commit/48f9c060116f0f1042cb660184758d7c69416366))
+
+
+
+
+
 ## [0.0.1-alpha.33](https://github.com/stbui/magijs/compare/v0.0.1-alpha.32...v0.0.1-alpha.33) (2022-08-25)
 
 **Note:** Version bump only for package magijs

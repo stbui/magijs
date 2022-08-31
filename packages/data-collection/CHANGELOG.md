@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.34](https://github.com/stbui/magijs/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
+
+
+### Features
+
+* wip ([48f9c06](https://github.com/stbui/magijs/commit/48f9c060116f0f1042cb660184758d7c69416366))
+
+
+
+
+
 ## [0.0.1-alpha.33](https://github.com/stbui/magijs/compare/v0.0.1-alpha.32...v0.0.1-alpha.33) (2022-08-25)
 
 **Note:** Version bump only for package @magijs/data-collection

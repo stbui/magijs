@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.34](https://github.com/stbui/magijs/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
+
+
+### Features
+
+* cli ([29517c5](https://github.com/stbui/magijs/commit/29517c5cf037d4013f7609a3d28e56b5531a83c9))
+* vue ([9b6bbe2](https://github.com/stbui/magijs/commit/9b6bbe2f3ac2e1218b208bfe92b2e0e54f9eadd1))
+
+
+
+
+
 ## [0.0.1-alpha.33](https://github.com/stbui/magijs/compare/v0.0.1-alpha.32...v0.0.1-alpha.33) (2022-08-25)
 
 **Note:** Version bump only for package @magijs/create-app
