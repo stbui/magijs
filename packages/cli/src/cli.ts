@@ -3,6 +3,7 @@ import { dev } from 'umi/dist/cli/dev';
 import { checkLocal, checkVersion as checkNodeVersion } from 'umi/dist/cli/node';
 import { DEV_COMMAND } from 'umi/dist/constants';
 import { Service } from 'umi/dist/service/service';
+import { Rewrite } from './umi4/rewrite';
 
 interface IOpts {
   presets?: string[];
@@ -11,6 +12,7 @@ interface IOpts {
 export async function run(opts: IOpts = {}) {
   checkNodeVersion();
   checkLocal();
+  new Rewrite()
 
   const args = yParser(process.argv.slice(2), {
     alias: {
