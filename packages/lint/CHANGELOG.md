@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.35](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.34...v0.0.1-alpha.35) (2022-09-05)
+
+
+### Features
+
+* wip ([ddffeab](https://git.zhonganinfo.com/zafe/magi-framework/commits/ddffeaba510af1a8c1b5b4c1805a2f05b1ac96f3))
+
+
+
+
+
 ## [0.0.1-alpha.34](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
 
 

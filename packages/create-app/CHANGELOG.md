@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.35](https://github.com/stbui/magijs/compare/v0.0.1-alpha.34...v0.0.1-alpha.35) (2022-09-05)
+
+
+### Features
+
+* **vue:** 完善vue模板 ([e1a3767](https://github.com/stbui/magijs/commit/e1a37676636dd5dd141228fb5008145c443431cd))
+* wip ([ddffeab](https://github.com/stbui/magijs/commit/ddffeaba510af1a8c1b5b4c1805a2f05b1ac96f3))
+
+
+
+
+
 ## [0.0.1-alpha.34](https://github.com/stbui/magijs/compare/v0.0.1-alpha.33...v0.0.1-alpha.34) (2022-08-31)
 
 
