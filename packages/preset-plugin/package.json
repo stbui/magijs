@@ -1,6 +1,6 @@
 {
   "name": "@magijs/preset-plugin",
-  "version": "0.0.1-alpha.36",
+  "version": "0.0.1-alpha.37",
   "description": "插件集",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -17,7 +17,7 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.36",
+    "@magijs/compiled": "^0.0.1-alpha.37",
     "@umijs/plugin-sass": "1.1.1",
     "@umijs/plugins": "4.0.8",
     "@umijs/preset-vue": "^4.0.12"
@@ -25,5 +25,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e1dd9bbd99e4aeac56940b4a101994e3fb40f9ea"
+  "gitHead": "09ffcd2b91f26a98c139a81367f2b487995bb6ad"
 }

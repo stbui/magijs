@@ -1,6 +1,6 @@
 {
   "name": "@magijs/compiled",
-  "version": "0.0.1-alpha.36",
+  "version": "0.0.1-alpha.37",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -40,5 +40,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e1dd9bbd99e4aeac56940b4a101994e3fb40f9ea"
+  "gitHead": "09ffcd2b91f26a98c139a81367f2b487995bb6ad"
 }
