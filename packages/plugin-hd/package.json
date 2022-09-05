@@ -1,6 +1,6 @@
 {
   "name": "@magijs/plugin-hd",
-  "version": "0.0.1-alpha.35",
+  "version": "0.0.1-alpha.36",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",

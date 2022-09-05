@@ -1,6 +1,6 @@
 {
   "name": "@magijs/eslint",
-  "version": "0.0.1-alpha.35",
+  "version": "0.0.1-alpha.36",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/core": "^7.18.13",
     "@babel/eslint-parser": "^7.18.9",
-    "@magijs/compiled": "^0.0.1-alpha.35",
+    "@magijs/compiled": "^0.0.1-alpha.36",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "babel-eslint": "^11.0.0-beta.2",
