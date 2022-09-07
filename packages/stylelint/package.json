@@ -1,6 +1,6 @@
 {
   "name": "@magijs/stylelint",
-  "version": "0.0.1-alpha.37",
+  "version": "0.0.1-alpha.38",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -20,7 +20,7 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.37",
+    "@magijs/compiled": "^0.0.1-alpha.38",
     "stylelint": "^14.11.0",
     "stylelint-checkstyle-formatter": "^0.1.2",
     "stylelint-config-recommended-scss": "^7.0.0",
@@ -29,5 +29,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "09ffcd2b91f26a98c139a81367f2b487995bb6ad"
+  "gitHead": "88c6878564b75f5d43038e63c61d489d1c440886"
 }
