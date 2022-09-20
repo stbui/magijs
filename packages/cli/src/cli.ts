@@ -12,7 +12,9 @@ interface IOpts {
 export async function run(opts: IOpts = {}) {
   checkNodeVersion();
   checkLocal();
-  new Rewrite()
+  new Rewrite();
+
+  process.env.DID_YOU_KNOW = 'none';
 
   const args = yParser(process.argv.slice(2), {
     alias: {
@@ -29,6 +31,7 @@ export async function run(opts: IOpts = {}) {
   }
   opts.presets = opts?.presets ?? [require.resolve('./preset')];
   if (opts?.presets) {
+    process.env.UMI_PRESETS = opts.presets.join(',');
     process.env.UMI_PRESETS = opts.presets.join(',');
   }
   if (command === DEV_COMMAND) {
