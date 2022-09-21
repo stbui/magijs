@@ -6,7 +6,6 @@
     "start": "cross-env DEPLOY_ENV=dev magi dev",
     "build": "cross-env DEPLOY_ENV=prd magi build",
     "server": "magi deploy",
-    "test": "magi test ./src/components",
     "lint": "magi lint",
     "lint:report": "magi lint --report",
     "magi": "magi"
