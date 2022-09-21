@@ -9,11 +9,11 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@magijs/magi": "^0.0.1-alpha.34",
+    "@magijs/magi": "^0.0.1-alpha.38",
     "vue": "^3.2.36"
   },
   "devDependencies": {
-    "@magijs/cli": "^0.0.1-alpha.34",
+    "@magijs/cli": "^0.0.1-alpha.38",
     "typescript": "^4.1.2"
   }
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.39](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.39) (2022-09-20)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+
+
+
+
+
 ## [0.0.1-alpha.38](https://github.com/stbui/magijs/compare/v0.0.1-alpha.37...v0.0.1-alpha.38) (2022-09-07)
 
 **Note:** Version bump only for package @magijs/eslint

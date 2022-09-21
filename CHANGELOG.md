@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.39](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.39) (2022-09-20)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+
+
+
+
+
 ## [0.0.1-alpha.38](https://github.com/stbui/magijs/compare/v0.0.1-alpha.37...v0.0.1-alpha.38) (2022-09-07)
 
 **Note:** Version bump only for package magijs
