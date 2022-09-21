@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>This is umi docs.</p>
+    <p>This is magi docs.</p>
   </div>
 </template>

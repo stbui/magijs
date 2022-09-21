@@ -1,11 +1,15 @@
 {
   "name": "magi-vue",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stbui/magijs"
+  },
   "scripts": {
     "build": "magi build",
     "dev": "magi dev",
-    "server": "magi deploy",
     "postinstall": "magi setup",
+    "server": "magi deploy",
     "start": "npm run dev"
   },
   "dependencies": {

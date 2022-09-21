@@ -6,7 +6,7 @@ export default (api: IApi) => {
     logger.info('Hello Magi@鼠');
   });
 
-  const corePlugins = [require.resolve('./features/config'), require.resolve('./features/apptype')];
+  const corePlugins = [require.resolve('./features/apptype')];
 
   const plugins = [
     require.resolve('@umijs/plugins/dist/access'),
@@ -27,13 +27,6 @@ export default (api: IApi) => {
 
   if (api.userConfig.qiankun) {
     plugins.push(require.resolve('@umijs/plugins/dist/qiankun'));
-  }
-
-  //
-  if (api.userConfig.vue) {
-    return {
-      plugins: [...corePlugins, require.resolve('@umijs/preset-vue')],
-    };
   }
 
   return {

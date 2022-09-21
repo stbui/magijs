@@ -9,5 +9,16 @@ if (args.includes('component')) {
 } else if (args.includes('lint')) {
   runLint(args);
 } else {
-  runCli();
+  let presets = [require.resolve('./preset')];
+
+  try {
+    // vue
+    const vue = require.resolve('vue');
+    presets = [require.resolve('@umijs/preset-vue')];
+  } catch (e) {
+    // react
+    presets = [require.resolve('./preset')];
+  }
+
+  runCli({ presets });
 }

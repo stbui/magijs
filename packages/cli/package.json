@@ -23,9 +23,12 @@
     "@magijs/data-collection": "^0.0.1-alpha.38",
     "@magijs/lint": "^0.0.1-alpha.38",
     "@magijs/preset-plugin": "^0.0.1-alpha.38",
-    "@umijs/preset-vue": "4.0.15",
+    "@umijs/preset-vue": "4.0.21",
     "npm-updater": "3.0.3",
-    "umi": "4.0.11"
+    "umi": "4.0.21"
+  },
+  "peerDependencies": {
+    "umi": "^4.x.x"
   },
   "publishConfig": {
     "access": "public"

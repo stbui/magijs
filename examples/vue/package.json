@@ -7,9 +7,9 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "vue": "^3.2.36",
+    "@magijs/cli": "^0.0.1-alpha.39",
     "@magijs/magi": "^0.0.1-alpha.39",
-    "@magijs/cli": "^0.0.1-alpha.39"
+    "vue": "^3.2.36"
   },
   "devDependencies": {
     "typescript": "^4.1.2"

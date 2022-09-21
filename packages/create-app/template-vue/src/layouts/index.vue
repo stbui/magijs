@@ -8,7 +8,7 @@
         <router-link to="/docs">Docs</router-link>
       </li>
       <li>
-        <a href="https://github.com/umijs/umi">Github</a>
+        <a href="https://github.com/stbui/magijs">Github</a>
       </li>
     </ul>
     <router-view></router-view>
