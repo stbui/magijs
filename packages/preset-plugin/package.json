@@ -18,9 +18,10 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.38",
-    "@umijs/plugin-sass": "1.1.1",
-    "@umijs/plugins": "4.0.8",
-    "@umijs/preset-vue": "^4.0.12"
+    "@umijs/plugins": "4.0.8"
+  },
+  "peerDependencies": {
+    "umi": "^4.x.x"
   },
   "publishConfig": {
     "access": "public"

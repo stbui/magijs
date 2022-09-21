@@ -12,8 +12,11 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "antd": "^4.21.7",
-    "umi": "4.0.11"
+    "antd": "^4.23.2",
+    "umi": "4.0.21"
+  },
+  "peerDependencies": {
+    "umi": "^4.x.x"
   },
   "publishConfig": {
     "access": "public"

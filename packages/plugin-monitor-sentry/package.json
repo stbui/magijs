@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.38",
-    "@sentry/browser": "7.10.0",
-    "@sentry/webpack-plugin": "1.19.0",
-    "umi": "3.5.26"
+    "@sentry/browser": "7.13.0",
+    "@sentry/webpack-plugin": "1.19.0"
+  },
+  "peerDependencies": {
+    "umi": "^4.x.x"
   },
   "publishConfig": {
     "access": "public"

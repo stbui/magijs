@@ -18,8 +18,10 @@
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.38",
     "@magijs/openapi": "^0.0.1-alpha.38",
-    "swagger-ui-react": "^3.44.0",
-    "umi": "3.5.26"
+    "swagger-ui-react": "^3.44.0"
+  },
+  "peerDependencies": {
+    "umi": "^3.x.x"
   },
   "publishConfig": {
     "access": "public"
