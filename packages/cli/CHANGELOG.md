@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.41](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.41) (2022-09-22)
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 完善vue打包集成 ([2a2f332](https://github.com/stbui/magijs/commit/2a2f3327312949adafaa09a0ea20b53831ff2ea0))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
 ## [0.0.1-alpha.40](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.40) (2022-09-21)
 
 
