@@ -5,32 +5,30 @@ import cors from '@magijs/compiled/cors';
 import { createProxyMiddleware } from '@magijs/compiled/http-proxy-middleware';
 
 export function httpProxy(options, publicPath?, staticDir = 'dist') {
-  if (!options) {
-    return console.error('[magi] 代理服务:', '配置文件有误');
-  }
-
   const app = express();
   app.get('/health', (req, res) => res.status(200).send('OK'));
-
-  let proxyMiddlewares: any = [];
-  Object.keys(options)
-    .map(option => {
-      const proxyOptions = options[option];
-      proxyOptions.context = option;
-
-      return proxyOptions;
-    })
-    .forEach(option => {
-      const context = option.context || option.path;
-
-      if (option.target) {
-        proxyMiddlewares.push(createProxyMiddleware(context, option));
-      }
-    });
 
   app.use(cors());
   app.use(history());
   app.use(compression());
+
+  let proxyMiddlewares: any = [];
+  if (options) {
+    Object.keys(options)
+      .map(option => {
+        const proxyOptions = options[option];
+        proxyOptions.context = option;
+
+        return proxyOptions;
+      })
+      .forEach(option => {
+        const context = option.context || option.path;
+
+        if (option.target) {
+          proxyMiddlewares.push(createProxyMiddleware(context, option));
+        }
+      });
+  }
 
   if (proxyMiddlewares.length) {
     app.use(proxyMiddlewares);
