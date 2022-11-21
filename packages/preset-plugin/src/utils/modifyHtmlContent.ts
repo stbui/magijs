@@ -20,18 +20,18 @@ function getScriptConfig(config) {
 }
 
 export function modifyHtmlContent(api) {
-  api.addHTMLHeadScripts(() => [
-    {
-      content: '/* MAGI_APP_INFO */',
-      id: 'magi_app_info',
-    },
-  ]);
+  // api.addHTMLHeadScripts(() => [
+  //   {
+  //     content: '/* MAGI_APP_INFO */',
+  //     id: 'magi_app_info',
+  //   },
+  // ]);
 
-  api.modifyHTML($ => {
-    const scriptContent = getScriptConfig(api.userConfig);
-    $('#magi_app_info').text(`window.MAGI_APP_INFO=${JSON.stringify(scriptContent)}`);
-    return $;
-  });
+  // api.modifyHTML($ => {
+  //   const scriptContent = getScriptConfig(api.userConfig);
+  //   $('#magi_app_info').text(`window.MAGI_APP_INFO=${JSON.stringify(scriptContent)}`);
+  //   return $;
+  // });
 }
 
 export function modifyHtml(config) {

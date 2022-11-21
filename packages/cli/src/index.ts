@@ -14,7 +14,7 @@ if (args.includes('component')) {
   try {
     // vue
     const vue = require.resolve('vue');
-    presets = [require.resolve('@umijs/preset-vue')];
+    presets = [require.resolve('@magijs/preset-plugin/lib/ship'), require.resolve('@umijs/preset-vue')];
   } catch (e) {
     // react
     presets = [require.resolve('./preset')];
