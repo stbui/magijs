@@ -6,18 +6,21 @@
     "url": "https://github.com/stbui/magijs"
   },
   "scripts": {
-    "build": "magi build",
-    "dev": "magi dev",
+    "build": "cross-env DEPLOY_ENV=prd magi build",
     "postinstall": "magi setup",
+    "lint": "magi lint",
+    "lint:report": "magi lint --report",
+    "magi": "magi",
     "server": "magi deploy",
-    "start": "npm run dev"
+    "start": "cross-env DEPLOY_ENV=dev magi dev"
   },
   "dependencies": {
-    "@magijs/magi": "^0.0.1-alpha.38",
+    "@magijs/magi": "^0.0.1-alpha.43",
     "vue": "^3.2.36"
   },
   "devDependencies": {
-    "@magijs/cli": "^0.0.1-alpha.38",
+    "@magijs/cli": "^0.0.1-alpha.43",
+    "cross-env": "^7.0.2",
     "typescript": "^4.1.2"
   }
 }

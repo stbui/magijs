@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.43](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.43) (2022-11-16)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+* **node-server:** 修复没有配置代理失败问题 ([42a6667](https://github.com/stbui/magijs/commit/42a666720919fc6e47d72c6665573f389ecfffa5))
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 完善vue打包集成 ([2a2f332](https://github.com/stbui/magijs/commit/2a2f3327312949adafaa09a0ea20b53831ff2ea0))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.44](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.44) (2022-11-16)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+* **node-server:** 修复没有配置代理失败问题 ([42a6667](https://github.com/stbui/magijs/commit/42a666720919fc6e47d72c6665573f389ecfffa5))
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 完善vue打包集成 ([2a2f332](https://github.com/stbui/magijs/commit/2a2f3327312949adafaa09a0ea20b53831ff2ea0))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.43](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.43) (2022-11-16)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+* **node-server:** 修复没有配置代理失败问题 ([42a6667](https://github.com/stbui/magijs/commit/42a666720919fc6e47d72c6665573f389ecfffa5))
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 完善vue打包集成 ([2a2f332](https://github.com/stbui/magijs/commit/2a2f3327312949adafaa09a0ea20b53831ff2ea0))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.42](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.42) (2022-11-03)
+
+
+### Bug Fixes
+
+* 修复elsint配置错误 ([821a0b3](https://github.com/stbui/magijs/commit/821a0b38f17aa412fb1bcc4384708b3f1fc6699a))
+* **node-server:** 修复没有配置代理失败问题 ([42a6667](https://github.com/stbui/magijs/commit/42a666720919fc6e47d72c6665573f389ecfffa5))
+
+
+### Features
+
+* 调整插件 ([413195f](https://github.com/stbui/magijs/commit/413195f57c947f549273b3733af42b2a27aa34f8))
+* 完善vue打包集成 ([2a2f332](https://github.com/stbui/magijs/commit/2a2f3327312949adafaa09a0ea20b53831ff2ea0))
+* 修复preset加载问题 ([0504875](https://github.com/stbui/magijs/commit/050487573ed100968836fb615e8f86c7de689325))
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
 ## [0.0.1-alpha.41](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.41) (2022-09-22)
 
 

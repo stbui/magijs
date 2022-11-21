@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.43](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.43) (2022-11-16)
+
+
+### Features
+
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.44](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.44) (2022-11-16)
+
+
+### Features
+
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.43](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.43) (2022-11-16)
+
+
+### Features
+
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
+## [0.0.1-alpha.42](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.42) (2022-11-03)
+
+
+### Features
+
+* wip ([31700ae](https://github.com/stbui/magijs/commit/31700aec0991ba336a36e5ffeaef8a2fbaf50d23))
+
+
+
+
+
 ## [0.0.1-alpha.41](https://github.com/stbui/magijs/compare/v0.0.1-alpha.38...v0.0.1-alpha.41) (2022-09-22)
 
 

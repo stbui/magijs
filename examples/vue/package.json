@@ -2,9 +2,13 @@
   "private": true,
   "author": "stbui <stbui@stbui.com>",
   "scripts": {
-    "dev": "magi dev",
+    "build": "cross-env DEPLOY_ENV=prd magi build",
     "postinstall": "magi setup",
-    "start": "npm run dev"
+    "lint": "magi lint",
+    "lint:report": "magi lint --report",
+    "magi": "magi",
+    "server": "magi deploy",
+    "start": "cross-env DEPLOY_ENV=dev magi dev"
   },
   "dependencies": {
     "@magijs/cli": "^0.0.1-alpha.39",
@@ -12,6 +16,7 @@
     "vue": "^3.2.36"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "typescript": "^4.1.2"
   }
 }

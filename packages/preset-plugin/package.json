@@ -18,7 +18,8 @@
   },
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.38",
-    "@umijs/plugins": "4.0.8"
+    "@umijs/plugins": "4.0.32",
+    "cheerio": "^1.0.0-rc.12"
   },
   "peerDependencies": {
     "umi": "^4.x.x"
