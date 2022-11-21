@@ -2,7 +2,7 @@
   "private": true,
   "author": "stbui <stbui@stbui.com>",
   "scripts": {
-    "build": "cross-env DEPLOY_ENV=prd magi build",
+    "xxx": "cross-env DEPLOY_ENV=prd magi build",
     "postinstall": "magi setup",
     "lint": "magi lint",
     "lint:report": "magi lint --report",

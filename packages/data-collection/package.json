@@ -1,6 +1,6 @@
 {
   "name": "@magijs/data-collection",
-  "version": "0.0.1-alpha.38",
+  "version": "0.0.1-alpha.44",
   "description": "企业级应用框架",
   "main": "lib/index.js",
   "module": "esm/index.js",

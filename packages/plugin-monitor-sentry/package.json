@@ -1,6 +1,6 @@
 {
   "name": "@magijs/plugin-monitor-sentry",
-  "version": "0.0.1-alpha.38",
+  "version": "0.0.1-alpha.44",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -16,7 +16,7 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.38",
+    "@magijs/compiled": "^0.0.1-alpha.44",
     "@sentry/browser": "7.13.0",
     "@sentry/webpack-plugin": "1.19.0"
   },
