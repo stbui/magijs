@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.44",
+  "version": "0.0.1-alpha.45",
   "description": "",
   "repository": {
     "type": "git",
@@ -32,14 +32,14 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.44",
-    "@magijs/eslint": "^0.0.1-alpha.44",
-    "@magijs/prettier": "^0.0.1-alpha.44",
-    "@magijs/stylelint": "^0.0.1-alpha.44",
+    "@magijs/compiled": "^0.0.1-alpha.45",
+    "@magijs/eslint": "^0.0.1-alpha.45",
+    "@magijs/prettier": "^0.0.1-alpha.45",
+    "@magijs/stylelint": "^0.0.1-alpha.45",
     "lint-staged": "^13.0.3"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "88c6878564b75f5d43038e63c61d489d1c440886"
+  "gitHead": "0305d94c44ada25a8674feb5c4097b5e1eb5a85b"
 }

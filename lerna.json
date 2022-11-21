@@ -9,6 +9,6 @@
   "npmClient": "yarn",
   "packages": ["packages/*", "examples/*"],
   "useWorkspaces": true,
-  "version": "0.0.1-alpha.44",
+  "version": "0.0.1-alpha.45",
   "ignoreChanges": ["**/*.md", "**/*.test.ts", "**/*.e2e.ts", "**/test/**"]
 }

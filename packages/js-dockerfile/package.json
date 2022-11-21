@@ -1,6 +1,6 @@
 {
   "name": "@magijs/js-dockerfile",
-  "version": "0.0.1-alpha.44",
+  "version": "0.0.1-alpha.45",
   "private": "true",
   "description": "",
   "main": "lib/index.js",
