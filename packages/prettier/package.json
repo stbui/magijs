@@ -1,6 +1,6 @@
 {
   "name": "@magijs/prettier",
-  "version": "0.0.1-alpha.45",
+  "version": "0.0.1-alpha.46",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -20,12 +20,12 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.45",
+    "@magijs/compiled": "^0.0.1-alpha.46",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^2"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "0305d94c44ada25a8674feb5c4097b5e1eb5a85b"
+  "gitHead": "040dca447b5f9c643101b84208129e821f7b3bab"
 }

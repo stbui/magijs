@@ -1,6 +1,6 @@
 {
   "name": "@magijs/eslint",
-  "version": "0.0.1-alpha.45",
+  "version": "0.0.1-alpha.46",
   "description": "",
   "license": "ISC",
   "author": "",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/core": "^7.18.13",
     "@babel/eslint-parser": "^7.18.9",
-    "@magijs/compiled": "^0.0.1-alpha.45",
+    "@magijs/compiled": "^0.0.1-alpha.46",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "babel-eslint": "^11.0.0-beta.2",
@@ -37,5 +37,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "0305d94c44ada25a8674feb5c4097b5e1eb5a85b"
+  "gitHead": "040dca447b5f9c643101b84208129e821f7b3bab"
 }
