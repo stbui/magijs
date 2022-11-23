@@ -6,7 +6,13 @@ export default (api: IApi) => {
     logger.info('Hello Magi@鼠');
   });
 
-  const corePlugins = [require.resolve('./features/apptype'), require.resolve('@magijs/preset-plugin/lib/ship')];
+  const corePlugins = [
+    require.resolve('./features/apptype'),
+    require.resolve('@magijs/preset-plugin/lib/ship'),
+    require.resolve('@magijs/preset-plugin/lib/xflow'),
+    require.resolve('@magijs/preset-plugin/lib/seraph'),
+    require.resolve('@magijs/preset-plugin/lib/sentry'),
+  ];
 
   const plugins = [
     require.resolve('@umijs/plugins/dist/access'),

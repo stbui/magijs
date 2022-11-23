@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.47](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.46...v0.0.1-alpha.47) (2022-11-23)
+
+**Note:** Version bump only for package @magijs/lint
+
 ## [0.0.1-alpha.46](https://git.zhonganinfo.com/zafe/magi-framework/compare/v0.0.1-alpha.45...v0.0.1-alpha.46) (2022-11-22)
 
 **Note:** Version bump only for package @magijs/lint

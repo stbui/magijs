@@ -1,5 +1,5 @@
 import { IApi } from 'umi';
-import chalk from 'chalk';
+import chalk from '@magijs/compiled/chalk';
 
 export default (api: IApi) => {
   api.describe({

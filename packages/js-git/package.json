@@ -1,6 +1,6 @@
 {
   "name": "@magijs/js-git",
-  "version": "0.0.1-alpha.46",
+  "version": "0.0.1-alpha.47",
   "private": "true",
   "description": "",
   "main": "lib/index.js",
