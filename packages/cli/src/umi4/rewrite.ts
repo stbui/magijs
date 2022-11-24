@@ -41,9 +41,12 @@ export class Rewrite {
       const build = require.resolve('@umijs/preset-umi/dist/commands/build');
       this.replace('import_utils.logger.info', '//', build);
 
-      const ts = require.resolve('@umijs/preset-umi/dist/features/tmpFiles/tmpFiles')
+      const ts = require.resolve('@umijs/preset-umi/dist/features/tmpFiles/tmpFiles');
       this.replace('const umiTempDir = `${srcPrefix}.umi`;', 'const umiTempDir = `${srcPrefix}.magi`;', ts);
 
+      // api.appData.hasSrcDir ? "/src/.umi/umi.ts" : "/.umi/umi.ts"
+      const ViteHtmlPlugin = require.resolve('@umijs/preset-umi/dist/commands/dev/plugins/ViteHtmlPlugin');
+      this.replace(/\/\.umi\/umi\.ts/g, '/.magi/umi.ts', ViteHtmlPlugin);
     } catch (e) {
       console.error(`[${this._alias}] 内核文件风险提示`);
     }

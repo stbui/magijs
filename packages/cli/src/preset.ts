@@ -12,6 +12,10 @@ export default (api: IApi) => {
     require.resolve('@magijs/preset-plugin/lib/xflow'),
     require.resolve('@magijs/preset-plugin/lib/seraph'),
     require.resolve('@magijs/preset-plugin/lib/sentry'),
+
+    require.resolve('@magi/plugin/lib/config'),
+    require.resolve('@magi/plugin/lib/sso'),
+    require.resolve('@magi/plugin/lib/constraint'),
   ];
 
   const plugins = [
