@@ -39,6 +39,10 @@ export default (api: IApi) => {
     plugins.push(require.resolve('@umijs/plugins/dist/qiankun'));
   }
 
+  if (api.userConfig.mf) {
+    plugins.push(require.resolve('@magi/plugin/lib/mf'));
+  }
+
   return {
     plugins: [...corePlugins, ...plugins],
   };

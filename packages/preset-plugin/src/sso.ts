@@ -1,7 +1,6 @@
-import type { MagiApi } from '@magi/types';
 import { logger } from '@umijs/utils';
 
-export default (api: MagiApi) => {
+export default api => {
   api.describe({
     key: 'sso',
     config: {
