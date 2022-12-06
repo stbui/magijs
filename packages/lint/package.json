@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.47",
+  "version": "0.0.1-alpha.48",
   "description": "",
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.47",
     "@magijs/eslint": "^0.0.1-alpha.47",
-    "@magijs/prettier": "^0.0.1-alpha.47",
+    "@magijs/prettier": "^0.0.1-alpha.48",
     "@magijs/stylelint": "^0.0.1-alpha.47",
     "lint-staged": "^13.0.3"
   },

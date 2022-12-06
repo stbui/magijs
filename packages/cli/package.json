@@ -1,6 +1,6 @@
 {
   "name": "@magijs/cli",
-  "version": "0.0.1-alpha.47",
+  "version": "0.0.1-alpha.48",
   "description": "命令行工具",
   "license": "ISC",
   "bin": {
@@ -21,8 +21,8 @@
   "dependencies": {
     "@magijs/compiled": "^0.0.1-alpha.47",
     "@magijs/data-collection": "^0.0.1-alpha.47",
-    "@magijs/lint": "^0.0.1-alpha.47",
-    "@magijs/preset-plugin": "^0.0.1-alpha.47",
+    "@magijs/lint": "^0.0.1-alpha.48",
+    "@magijs/preset-plugin": "^0.0.1-alpha.48",
     "@umijs/preset-vue": "4.0.21",
     "npm-updater": "3.0.3",
     "umi": "4.0.21"

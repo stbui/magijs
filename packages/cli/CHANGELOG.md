@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.48](https://github.com/stbui/magijs/compare/v0.0.1-alpha.47...v0.0.1-alpha.48) (2022-12-06)
+
+### Features
+
+- add plugin ([6b7a289](https://github.com/stbui/magijs/commit/6b7a28936304b73a2d939ec6a0ec7b5d0eb7478f))
+- wip ([6ffe840](https://github.com/stbui/magijs/commit/6ffe84024636fa6c1645fd1dea2a4ac498cf4912))
+
 ## [0.0.1-alpha.47](https://github.com/stbui/magijs/compare/v0.0.1-alpha.46...v0.0.1-alpha.47) (2022-11-23)
 
 **Note:** Version bump only for package @magijs/cli
