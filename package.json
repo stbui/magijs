@@ -1,31 +1,28 @@
 {
   "name": "magijs",
   "version": "0.0.1-alpha.14",
-  "description": "",
   "private": true,
-  "scripts": {
-    "preinstall": "node ./scripts/checkYarn.js",
-    "clear": "lerna clean",
-    "bootstrap:ci": "lerna bootstrap",
-    "build": "lerna run build",
-    "demo:magi": "cd ./examples/demo && yarn start",
-    "demo:vite": "cd ./examples/demo-vite && yarn dev",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "docs": "yarn docs:dev",
-    "docs:dev": "node ./packages/cli/bin/zajs.js dev",
-    "docs:build": "node ./packages/cli/bin/zajs.js build",
-    "release": "yarn run build && lerna publish prepatch --exact --conventional-commits --force-publish",
-    "release:lerna": "lerna version --exact --no-git-tag-version",
-    "release:beta": "lerna publish --force-publish=* --exact --preid=beta --npm-tag=beta"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
+  "description": "",
   "license": "ISC",
   "workspaces": [
     "packages/*",
     "examples/*"
   ],
+  "scripts": {
+    "bootstrap:ci": "lerna bootstrap",
+    "build": "lerna run build",
+    "clear": "lerna clean",
+    "demo:magi": "cd ./examples/demo && yarn start",
+    "demo:vite": "cd ./examples/demo-vite && yarn dev",
+    "docs": "yarn docs:dev",
+    "docs:build": "node ./packages/cli/bin/zajs.js build",
+    "docs:dev": "node ./packages/cli/bin/zajs.js dev",
+    "preinstall": "node ./scripts/checkYarn.js",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "release": "yarn run build && lerna publish prepatch --exact --conventional-commits --force-publish",
+    "release:beta": "lerna publish --force-publish=* --exact --preid=beta --npm-tag=beta",
+    "release:lerna": "lerna version --exact --no-git-tag-version"
+  },
   "lint-staged": {
     "*.ts?(x)": [
       "prettier --parser=typescript --write",
@@ -36,14 +33,20 @@
       "git add"
     ]
   },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "chalk": "^5.1.2",
+    "lerna": "^6.1.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "gitHooks": {
     "pre-commit": "lint-staged",
     "commit-msg": "node scripts/verifyCommit.js"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "lerna": "^6.0.3",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.9.3"
   }
 }

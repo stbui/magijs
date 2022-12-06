@@ -15,11 +15,11 @@
     "start": "cross-env DEPLOY_ENV=dev magi dev"
   },
   "dependencies": {
-    "@magijs/magi": "^0.0.1-alpha.45",
+    "@magijs/magi": "^0.0.1-alpha.47",
     "vue": "^3.2.36"
   },
   "devDependencies": {
-    "@magijs/cli": "^0.0.1-alpha.45",
+    "@magijs/cli": "^0.0.1-alpha.47",
     "cross-env": "^7.0.2",
     "typescript": "^4.1.2"
   }

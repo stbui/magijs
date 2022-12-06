@@ -244,7 +244,7 @@ export { getDvaApp } from './dva';
   });
 };
 
-export function getModelUtil(api: MagiApi | null) {
+export function getModelUtil(api) {
   return new ModelUtils(api, {
     contentTest(content) {
       return content.startsWith('// @dva-model');
@@ -265,7 +265,7 @@ export function getModelUtil(api: MagiApi | null) {
   });
 }
 
-export function getAllModels(api: MagiApi) {
+export function getAllModels(api) {
   return getModelUtil(api).getAllModels({
     extraModels: [...(api.config.dva.extraModels || [])],
   });
