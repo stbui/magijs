@@ -1,13 +1,64 @@
-import { formatter as eslintStyle } from '@magijs/eslint';
-import { formatter as stylelintStyle } from '@magijs/stylelint';
-import { writeFileSync } from 'fs';
+import { writeFileSync, access } from 'fs';
+import shelljs from 'shelljs';
+import { stylelintReport } from './stylelint-report';
 
-export function report() {
-  eslintStyle().then(result => {
-    writeFileSync('report_zacc_eslint_js.xml', result, { encoding: 'utf-8' });
+const eslintrcConfig = {
+  root: true,
+  extends: ['za/typescript-react'],
+};
+
+const stylelintrcConfig = {
+  extends: 'stylelint-config-za',
+};
+
+const eslintFileName = '.eslintrc';
+const styleFile = '.stylelintrc';
+
+function isFileExisted(file) {
+  return new Promise((resolve, reject) => {
+    access(file, err => {
+      if (err) {
+        reject(err.message);
+      } else {
+        resolve('existed');
+      }
+    });
   });
+}
 
-  stylelintStyle().then(result => {
-    writeFileSync('report_zacc_stylint_css.xml', result.output, { encoding: 'utf-8' });
+async function generateFile(fileName: string, config) {
+  try {
+    var res = await isFileExisted(fileName);
+    console.log('[magi]', fileName, res);
+  } catch (error) {
+    writeFileSync(fileName, JSON.stringify(config), 'utf-8');
+    console.log('[magi]', error);
+  }
+}
+
+export async function report(argv:string[]) {
+  await generateFile(eslintFileName, eslintrcConfig);
+  await generateFile(styleFile, stylelintrcConfig);
+
+  stylelintReport();
+
+  const argvParam = argv[1] || 'src';
+  const esCmd = [
+    'eslint',
+    '-f',
+    'checkstyle',
+    '-o',
+    'report_zacc_eslint_js.xml',
+    '--ext',
+    '.jsx,.js,.ts,.tsx',
+    argvParam,
+  ];
+
+  const child = shelljs.exec(esCmd.join(' '), {
+    async: true,
+  });
+  child.stdout.on('data', chunk => {
+    console.log(chunk);
+    console.log(`=> ./report_zacc_eslint_js.xml`);
   });
 }

@@ -21,13 +21,15 @@
 ### 使用
 
 ```
-magi-lint --prettier --style --staged --fix
+magi-lint eslint
+magi-lint stylelint
+magi-lint prettier
 ```
 
 生成报告
 
 ```
-magi-lint --report
+magi-lint report
 
 ```
 
