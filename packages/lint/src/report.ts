@@ -20,7 +20,7 @@ function isFileExisted(file) {
       if (err) {
         reject(err.message);
       } else {
-        resolve('existed');
+        resolve('ok');
       }
     });
   });
@@ -32,11 +32,11 @@ async function generateFile(fileName: string, config) {
     console.log('[magi]', fileName, res);
   } catch (error) {
     writeFileSync(fileName, JSON.stringify(config), 'utf-8');
-    console.log('[magi]', error);
+    console.log('[magi]', fileName, 'created');
   }
 }
 
-export async function report(argv:string[]) {
+export async function report(argv: string[]) {
   await generateFile(eslintFileName, eslintrcConfig);
   await generateFile(styleFile, stylelintrcConfig);
 

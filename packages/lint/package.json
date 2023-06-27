@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.2",
+  "version": "0.0.1-alpha.48.5",
   "description": "",
   "repository": {
     "type": "git",
@@ -38,9 +38,8 @@
     "@magijs/compiled": "^0.0.1-alpha.47",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
-    "babel-eslint": "10.1.0",
     "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-    "eslint-config-za": "2.2.2",
+    "eslint-config-za": "^2.4.0-alpha.3",
     "eslint-plugin-babel": "5.3.1",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
@@ -49,11 +48,11 @@
     "eslint-plugin-vue": "6.2.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.8.8",
-    "shelljs": "^0.8.5",
     "stylelint": "13.6.1",
     "stylelint-checkstyle-formatter": "0.1.2",
     "stylelint-config-za": "0.3.0",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "shelljs": "^0.8.5"
   },
   "publishConfig": {
     "access": "public"

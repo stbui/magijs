@@ -3,7 +3,7 @@ const stylelint = require('stylelint');
 const checkstyleFormatter = require('stylelint-checkstyle-formatter');
 
 export function stylelintReport() {
-  const REPORT_FILE = 'report_zacc_stylint_css.xml';
+  const REPORT_FILE = 'report_zacc_stylelint_css.xml';
   stylelint
     .lint({
       files: '**/*.scss',
