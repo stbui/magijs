@@ -1,15 +1,25 @@
-import shelljs from 'shelljs';
+import { fork } from 'child_process';
+import { resolve } from 'path';
 
-export function exec(argv) {
-  // stylelint **/*.css **/*.scss --syntax scss
-  const styCmd = ['stylelint', '**/*.css', '**/*.scss', '--syntax', 'scss'].join(' ');
+export function cli(command: string[]) {
+  const bin = resolve(require.resolve('stylelint'), '../../bin/stylelint.js');
 
-  console.log('[magi][stylelint]', styCmd);
-  shelljs
-    .exec(styCmd, {
-      async: true,
-    })
-    .stdout.on('data', chunk => {
-      console.log(chunk);
-    });
+  fork(bin, command, {
+    stdio: 'inherit',
+  });
+
+  console.log('[magi][stylelint]', command);
+}
+
+export function exec(argv: string[] = []) {
+  const defaultCommand = [
+    '**/*.css',
+    '**/*.scss',
+    '--syntax',
+    'scss',
+    '--config',
+    require.resolve('./config/stylelint'),
+  ].concat(argv);
+
+  cli(defaultCommand);
 }

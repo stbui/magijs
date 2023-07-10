@@ -1,15 +1,20 @@
-import shelljs from 'shelljs';
+import { fork } from 'child_process';
+import { resolve } from 'path';
 
-export function exec(argv) {
-  const esCmd = ['', '--ext', 'ts,tsx,js,jsx'];
-  const cmd = argv.join(' ') + esCmd.join(' ');
+export function cli(command: string[]) {
+  const eslint = resolve(require.resolve('eslint'), '../../bin/eslint.js');
 
-  console.log('[magi][eslint]', cmd);
-  shelljs
-    .exec(cmd, {
-      async: true,
-    })
-    .stdout.on('data', chunk => {
-      console.log(chunk);
-    });
+  fork(eslint, command, {
+    stdio: 'inherit',
+  });
+
+  console.log('[magi][eslint]', command);
+}
+
+export function exec(argv: string[] = []) {
+  const _argv = argv.length ? argv : ['src'];
+
+  const defaultCommand = ['--ext', 'ts,tsx,js,jsx', '-c', require.resolve('./config/eslint')].concat(_argv);
+
+  cli(defaultCommand);
 }

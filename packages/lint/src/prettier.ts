@@ -1,15 +1,25 @@
-import shelljs from 'shelljs';
+import { fork } from 'child_process';
+import { resolve } from 'path';
 
-export function exec(argv) {
-  // prettier --write 'client/**/*.{js,jsx,tsx,ts,less,md,json}'
-  const pCmd = ['prettier', '--write', '**/*.{js,jsx,tsx,ts,less,scss,json}'].join(' ');
+export function cli(command: string[]) {
+  const prettier = resolve(require.resolve('prettier'), '../bin-prettier.js');
 
-  console.log('[magi][prettier]', pCmd);
-  shelljs
-    .exec(pCmd, {
-      async: true,
-    })
-    .stdout.on('data', chunk => {
-      console.log(chunk);
-    });
+  fork(prettier, command, {
+    stdio: 'inherit',
+  });
+
+  console.log('[magi][eslint]', command);
+}
+
+export function exec(argv: string[] = []) {
+  const _argv = argv.length ? argv : ['src'];
+
+  const defaultCommand = [
+    '--config',
+    require.resolve('./config/eslint'),
+    '--write',
+    'src/**/*.{js,jsx,tsx,ts,scss,json}',
+  ].concat(_argv);
+
+  cli(defaultCommand);
 }

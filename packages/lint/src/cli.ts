@@ -2,15 +2,19 @@ import { report } from './report';
 import { exec as execStylelint } from './stylelint';
 import { exec as execEslint } from './eslint';
 import { exec as execPrettier } from './prettier';
+import { exec as staged } from './lintstaged';
 
-const argv = process.argv.slice(2);
+const type = process.argv.slice(2);
+const argv = process.argv.slice(3);
 
-if (argv.includes('report')) {
+if (type.includes('report')) {
   report(argv);
-} else if (argv.includes('stylelint')) {
+} else if (type.includes('stylelint')) {
   execStylelint(argv);
-} else if (argv.includes('eslint')) {
+} else if (type.includes('eslint')) {
   execEslint(argv);
-} else if (argv.includes('prettier')) {
+} else if (type.includes('prettier')) {
   execPrettier(argv);
+} else if (type.includes('staged')) {
+  staged(argv);
 }

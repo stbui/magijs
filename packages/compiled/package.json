@@ -30,7 +30,7 @@
     "npm-updater": "3.0.3",
     "nunjucks": "^3.2.2",
     "openapi3-ts": "^2.0.1",
-    "prettier": "2.7.1",
+    "prettier": "^3.0.0",
     "reserved-words": "^0.1.2",
     "serve-static": "^1.15.0",
     "stylelint": "^14.9.1",

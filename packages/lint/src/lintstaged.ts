@@ -1,29 +1,27 @@
-// import { fork } from 'child_process';
-// import { writeFileSync } from 'fs';
-// import { join, resolve } from 'path';
+import { fork } from 'child_process';
+import { writeFileSync } from 'fs';
+import { join, resolve } from 'path';
 
-// const configPath = join(__dirname, './lintstagedrc.json');
+const configPath = join(__dirname, '.lintstagedrc.json');
 
-// function createConfig() {
-//   const eslintConfig = require.resolve('@magijs/eslint/lib/config');
-//   const prettierConfig = require.resolve('@magijs/prettier/lib/config');
-//   const stylelintConfig = require.resolve('@magijs/stylelint/lib/config');
+export function exec(command: string[] = []) {
+  const eslintConfig = require.resolve('./config/eslint');
+  const stylelintConfig = require.resolve('./config/stylelint');
+  const prettierConfig = require.resolve('./config/prettier');
 
-//   const config = {
-//     'src/**/*.{css,scss,less}': [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
-//     'src/**/*.{js,jsx,tsx,ts}': [`eslint -c ${eslintConfig} --fix`, 'git add'],
-//     'src/**/*.{js,jsx,ts,tsx,scss,json}': [`prettier --config ${prettierConfig}  --write`, 'git add'],
-//   };
+  const dir = command.length ? command : ['src'];
 
-//   writeFileSync(configPath, JSON.stringify(config, null, 2), { encoding: 'utf-8' });
-//   try {
-//     const cli = resolve(require.resolve('lint-staged'), '../../bin/lint-staged.js');
-//     fork(cli, ['-c', configPath], {
-//       stdio: 'inherit',
-//     });
-//   } catch (e) {
-//     console.log('lint-staged 要求node 14， 暂时关闭');
-//   }
-// }
+  const config = {
+    [`${dir[0]}/**/*.{js,jsx,ts,tsx,scss,json}`]: [`prettier --config ${prettierConfig}  --write`, 'git add'],
+    [`${dir[0]}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
+    [`${dir[0]}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} --fix`, 'git add'],
+  };
 
-// createConfig();
+  writeFileSync(configPath, JSON.stringify(config, null, 2), { encoding: 'utf-8' });
+
+  console.log('[magi][staged]', config);
+  const cli = resolve(require.resolve('lint-staged'), '../../bin/lint-staged');
+  fork(cli, ['-c', configPath], {
+    stdio: 'inherit',
+  });
+}

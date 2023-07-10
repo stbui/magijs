@@ -20,17 +20,36 @@
 
 ### 使用
 
-```
-magi-lint eslint
-magi-lint stylelint
-magi-lint prettier
-```
-
-生成报告
+#### 安装
 
 ```
-magi-lint report
+yarn add @magijs/lint@latest
+```
 
+#### 执行命令
+
+```bash
+# 执行eslint检查js代码规范
+zalint eslint
+
+# 执行stylelint检查样式规范
+zalint stylelint
+
+# 生成报告，同时执行eslint和stylelint
+zalint report
+```
+
+#### 指定目录
+
+```bash
+# 指定client目录
+zalint eslint client
+
+# 指定client目录
+zalint stylelint client
+
+# 指定client目录
+zalint report client
 ```
 
 ### link
