@@ -7,7 +7,7 @@ if (args.includes('component')) {
   // magi component xxxxx
   console.log('已关闭');
 } else if (args.includes('lint')) {
-  runLint(args);
+  runLint();
 } else {
   let presets = [require.resolve('./preset')];
 
