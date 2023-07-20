@@ -2,11 +2,10 @@ const fs = require('fs');
 const stylelint = require('stylelint');
 const checkstyleFormatter = require('stylelint-checkstyle-formatter');
 
-export function stylelintReport() {
-  const REPORT_FILE = 'report_zacc_stylelint_css.xml';
+export function stylelintReport(arg = ['src']) {
   stylelint
     .lint({
-      files: '**/*.scss',
+      files: arg[0] + '**/*.scss',
       formatter: stylelintResults => {
         return checkstyleFormatter(stylelintResults);
       },
@@ -16,6 +15,8 @@ export function stylelintReport() {
       },
     })
     .then(result => {
+      const REPORT_FILE = 'report_zacc_stylelint_css.xml';
+
       fs.writeSync(fs.openSync(REPORT_FILE, 'w'), result.output);
       console.log(`=> ./${REPORT_FILE}`);
     });

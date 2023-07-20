@@ -8,18 +8,21 @@ export function cli(command: string[]) {
     stdio: 'inherit',
   });
 
-  console.log('[magi][stylelint]', command);
+  console.log('[magi][zalint]', command);
 }
 
 export function exec(argv: string[] = []) {
-  const defaultCommand = [
-    '**/*.css',
-    '**/*.scss',
-    '--syntax',
-    'scss',
-    '--config',
-    require.resolve('./config/stylelint'),
-  ].concat(argv);
+  let _argv = argv;
+
+  if (argv.length === 0) {
+    _argv = ['src/**/*.{css,scss}'];
+  } else if (argv[0] === '--fix') {
+    _argv = ['src/**/*.{css,scss}'].concat(argv);
+  } else {
+    _argv = [argv[0] + '/**/*.{css,scss}'].concat(argv.slice(1));
+  }
+
+  const defaultCommand = ['--config', require.resolve('./config/stylelint'), '**/*.{css,scss}'].concat(argv);
 
   cli(defaultCommand);
 }

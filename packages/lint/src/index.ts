@@ -1,6 +1,7 @@
 export * from './verifyCommit';
 export * from './report';
 export * from './stylelint-report';
+export * from './run';
 
 import { exec as execStylelint } from './stylelint';
 import { exec as execEslint } from './eslint';

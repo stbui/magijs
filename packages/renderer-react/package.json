@@ -1,0 +1,32 @@
+{
+  "name": "@magijs/renderer-react",
+  "version": "0.0.1-alpha.47",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "watch": "rimraf ./lib && tsc --watch"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-config": "^5.0.2",
+    "@umijs/runtime": "3.5.41",
+    "react-router-config": "5.1.1"
+  },
+  "peerDependencies": {
+    "umi": "^3.x.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "040dca447b5f9c643101b84208129e821f7b3bab"
+}

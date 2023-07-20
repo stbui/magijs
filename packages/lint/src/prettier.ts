@@ -2,24 +2,25 @@ import { fork } from 'child_process';
 import { resolve } from 'path';
 
 export function cli(command: string[]) {
-  const prettier = resolve(require.resolve('prettier'), '../bin-prettier.js');
+  const prettier = require.resolve('prettier');
 
   fork(prettier, command, {
     stdio: 'inherit',
   });
 
-  console.log('[magi][eslint]', command);
+  console.log('[magi][zalint]', command);
 }
 
 export function exec(argv: string[] = []) {
-  const _argv = argv.length ? argv : ['src'];
+  let _argv = argv;
 
-  const defaultCommand = [
-    '--config',
-    require.resolve('./config/eslint'),
-    '--write',
-    'src/**/*.{js,jsx,tsx,ts,scss,json}',
-  ].concat(_argv);
+  if (argv.length === 0) {
+    _argv = ['src/**/*.{js,jsx,tsx,ts,scss,json}'];
+  } else {
+    _argv = [argv[0] + '/**/*.{css,scss}'].concat(argv.slice(1));
+  }
+
+  const defaultCommand = ['--config', require.resolve('./config/prettier'), '--write'].concat(_argv);
 
   cli(defaultCommand);
 }

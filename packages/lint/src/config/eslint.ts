@@ -14,5 +14,7 @@ module.exports = {
       plugins: [['@babel/plugin-proposal-decorators', { version: 'legacy' }]],
     },
   },
+  // 禁止内联注释
+  noInlineConfig: true,
   ignorePatterns: ['**/*.d.ts'],
 };
