@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.14",
+  "version": "0.0.1-alpha.48.18",
   "description": "",
   "author": {
     "name": "王明",
@@ -48,9 +48,10 @@
     "stylelint-checkstyle-formatter": "0.1.2",
     "stylelint-config-za": "0.3.0",
     "typescript": "^4.0.2",
-    "shelljs": "^0.8.5",
     "eslint-config-prettier": "^8.8.0",
-    "@babel/plugin-proposal-decorators":"^7.22.7"
+    "@babel/plugin-proposal-decorators":"^7.22.7",
+    "@stbui/one-cli":"~0.0.10-alpha.0",
+    "@stbui/one-common":"~0.0.8-alpha.0"
   },
   "publishConfig": {
     "access": "public"

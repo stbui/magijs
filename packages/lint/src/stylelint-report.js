@@ -2,10 +2,14 @@ const fs = require('fs');
 const stylelint = require('stylelint');
 const checkstyleFormatter = require('stylelint-checkstyle-formatter');
 
-export function stylelintReport(arg = ['src']) {
+import { join } from 'path';
+
+export function stylelintReport(argv = ['src']) {
+  const files = join(argv[0], '/**/*.scss');
+
   stylelint
     .lint({
-      files: arg[0] + '**/*.scss',
+      files: files,
       formatter: stylelintResults => {
         return checkstyleFormatter(stylelintResults);
       },

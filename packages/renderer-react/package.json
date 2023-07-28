@@ -22,6 +22,9 @@
     "@umijs/runtime": "3.5.41",
     "react-router-config": "5.1.1"
   },
+  "devDependencies": {
+    "react-router-dom": "^6.3.0"
+  },
   "peerDependencies": {
     "umi": "^3.x.x"
   },

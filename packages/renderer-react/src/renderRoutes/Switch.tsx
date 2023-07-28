@@ -17,6 +17,7 @@ export default function Switch(props: any) {
               element = child;
               const path = child.props.path || child.props.from;
               match = path
+              // @ts-ignore
                 ? matchPath(location.pathname, { ...child.props, path })
                 : context.match;
             }

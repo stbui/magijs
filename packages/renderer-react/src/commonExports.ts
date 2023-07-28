@@ -1,6 +1,6 @@
 import { History, Location } from 'history-with-query';
 import { FunctionComponent } from 'react';
-import { match } from 'react-router-dom';
+// import { match } from 'react-router-dom';
 
 export interface IComponent extends FunctionComponent {
   getInitialProps?: Function;
@@ -29,7 +29,7 @@ export interface IRouteComponentProps<
   route: IRoute;
   routes: IRoute[];
   history: History;
-  match: match<Params>;
+  match: any;
 }
 
 export { default as renderRoutes } from './renderRoutes/renderRoutes';

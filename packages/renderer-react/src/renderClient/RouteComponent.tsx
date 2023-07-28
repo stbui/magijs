@@ -35,7 +35,7 @@ export default function RouterComponent(props: IRouterComponentProps) {
           renderRoutesProps.defaultTitle ||
           '';
       }
-      props.plugin.applyPlugins({
+      props.pluginManager.applyPlugins({
         key: 'onRouteChange',
         type: ApplyPluginsType.event,
         args: {
@@ -51,5 +51,6 @@ export default function RouterComponent(props: IRouterComponentProps) {
     return history.listen(routeChangeHandler);
   }, [history]);
 
+  // @ts-ignore
   return <Router history={history}>{renderRoutes(renderRoutesProps)}</Router>;
 }

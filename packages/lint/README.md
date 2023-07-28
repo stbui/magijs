@@ -55,33 +55,10 @@ zalint report client
 
 我们也推荐使用 lint-staged 和 Husky，将 lint 与 Git 工作流结合使用，以便在提交代码时自动 lint 本次变更的代码。
 
-#### 自定义配置规则
-
-zalintrc.json 配置文件，并且上传配置数据
-
-```json
-{
-  "eslintrc": {
-    "rules": {
-      "indent": "error"
-    }
-  },
-  "stylelintrc": {
-    "rules": {}
-  },
-  "prettierrc": {
-    "rules": {
-      "arrowParens": "always"
-    }
-  }
-}
-```
-
 ### link
 
 https://alloyteam.github.io/eslint-config-alloy/?language=zh-CN
 
 内置的 ESLint 规则列表：
-
 
 内置的 Stylelint 配置：

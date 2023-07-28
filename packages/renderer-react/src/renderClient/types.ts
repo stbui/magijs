@@ -3,7 +3,7 @@ import { IRoute } from '../commonExports';
 
 export interface IRouterComponentProps {
   routes: IRoute[];
-  plugin: Plugin;
+  pluginManager: Plugin;
   history: any;
   ssrProps?: object;
   defaultTitle?: string;
