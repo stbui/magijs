@@ -1,11 +1,13 @@
 export * from './verifyCommit';
-export * from './report';
-export * from './stylelint-report';
 export * from './run';
 
-import { exec as execStylelint } from './stylelint';
-import { exec as execEslint } from './eslint';
-import { exec as execPrettier } from './prettier';
-import { exec as execStaged } from './lintstaged';
+export * from './command/eslint.command';
+export * from './command/stylelint.command';
+export * from './command/prettier.command';
+export * from './command/report.command';
+export * from './command/staged.command';
 
-export { execStylelint, execEslint, execPrettier, execStaged };
+export * from './exec/eslint.exec';
+export * from './exec/prettier.exec';
+export * from './exec/staged.exec';
+export * from './exec/stylelint.exec';

@@ -38,17 +38,17 @@ zalint report
 zalint staged
 ```
 
-#### 指定静态扫描目录
+#### 自定义静态扫描目录
 
 ```bash
 # 指定扫描client目录
-zalint eslint client
+zalint eslint -d client -fix
 
 # 指定扫描client目录
-zalint stylelint client
+zalint stylelint -d client -fix
 
 # 指定扫描client目录
-zalint report client
+zalint report -d client
 ```
 
 #### 与 Git 工作流结合

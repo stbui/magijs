@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.18",
+  "version": "0.0.1-alpha.48.44",
   "description": "",
   "author": {
     "name": "王明",
@@ -25,7 +25,7 @@
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
     "prepare": "node ./lib/hooks/index.js",
-    "watch": "rimraf ./lib && tsc --watch"
+    "watch": "node ./lib/cli eslint"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.16.3",
@@ -35,7 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-    "eslint-config-za": "^2.4.0-alpha.3",
+    "eslint-config-za": "^2.4.0-alpha.4",
     "eslint-plugin-babel": "5.3.1",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
@@ -49,9 +49,9 @@
     "stylelint-config-za": "0.3.0",
     "typescript": "^4.0.2",
     "eslint-config-prettier": "^8.8.0",
-    "@babel/plugin-proposal-decorators":"^7.22.7",
-    "@stbui/one-cli":"~0.0.10-alpha.0",
-    "@stbui/one-common":"~0.0.8-alpha.0"
+    "@babel/plugin-proposal-decorators": "^7.22.7",
+    "@stbui/one-cli": "~0.0.10-alpha.0",
+    "@stbui/one-common": "~0.0.8-alpha.0"
   },
   "publishConfig": {
     "access": "public"
