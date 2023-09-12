@@ -5,7 +5,7 @@ import chalk from '@magijs/compiled/chalk';
 const { red, green, white, bold } = chalk;
 
 export function getErrorMsg(opts: { ruleId: string; rule }, args: { why?: string; path?: any; node?: any } = {}) {
-    const ruleLink = `http://docs.test.za.biz/advanced/constraint#${opts.ruleId}`;
+    const ruleLink = `https://magi.zhonganonline.com/advanced/constraint#${opts.ruleId}`;
 
     const msg: any = [];
     if (args.path && !args.node) {
