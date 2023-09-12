@@ -37,9 +37,9 @@ export class StagedCommand {
     const dir = this.dir;
 
     const config = {
-      [`${dir[0]}/**/*.{js,jsx,ts,tsx,scss,json}`]: [`prettier --config ${prettierConfig}  --write`, 'git add'],
-      [`${dir[0]}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
-      [`${dir[0]}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} --fix`, 'git add'],
+      [`${dir}/**/*.{js,jsx,ts,tsx,scss,json}`]: [`prettier --config ${prettierConfig} --write`, 'git add'],
+      [`${dir}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
+      [`${dir}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} --fix`, 'git add'],
     };
 
     writeFileSync(configPath, JSON.stringify(config, null, 2), { encoding: 'utf-8' });
