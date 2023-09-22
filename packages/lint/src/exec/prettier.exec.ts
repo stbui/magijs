@@ -1,7 +1,8 @@
 import { fork } from 'child_process';
+import { resolve } from 'path';
 
 export function PrettierExec(command: string[]) {
-  const prettier = require.resolve('prettier');
+  const prettier = resolve(require.resolve('prettier'), '../bin/prettier.cjs');
 
   fork(prettier, command, {
     stdio: 'inherit',
