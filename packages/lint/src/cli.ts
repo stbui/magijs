@@ -6,7 +6,7 @@ import { PrettierCommand } from './command/prettier.command';
 import { StagedCommand } from './command/staged.command';
 
 const pkg = require('../package.json');
-console.log('[magi][zalint]', 'version:', pkg.version);
+console.log('[zalint]', 'version:', pkg.version);
 
 function bootstrap() {
   Factory.create([EslintCommand, StylelintCommand, ReportCommand, PrettierCommand, StagedCommand]);

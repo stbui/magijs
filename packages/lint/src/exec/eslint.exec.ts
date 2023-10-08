@@ -8,5 +8,5 @@ export function EslintExec(command: string[]) {
     stdio: 'inherit',
   });
 
-  console.log('[magi][zalint]', JSON.stringify(command));
+  console.log('[zalint]', JSON.stringify(command));
 }
