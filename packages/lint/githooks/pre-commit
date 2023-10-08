@@ -2,8 +2,7 @@
 const childProcess = require('child_process');
 
 try {
-  const lint = require.resolve('@magijs/lint/bin');
-  childProcess.fork(lint, [], {
+  childProcess.exec('npm run lint', {
     stdio: 'inherit',
   });
 } catch (error) {

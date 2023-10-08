@@ -24,8 +24,7 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "postinstall": "node ./lib/hooks/index.js",
-    "watch": "node ./lib/cli eslint"
+    "install": "node ./lib/hooks/index.js"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.16.3",
