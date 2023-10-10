@@ -1,6 +1,3 @@
-export * from './verifyCommit';
-export * from './run';
-
 export * from './command/eslint.command';
 export * from './command/stylelint.command';
 export * from './command/prettier.command';
@@ -11,3 +8,7 @@ export * from './exec/eslint.exec';
 export * from './exec/prettier.exec';
 export * from './exec/staged.exec';
 export * from './exec/stylelint.exec';
+
+export * from './cli';
+export * from './verifyCommit';
+export * from './run';
