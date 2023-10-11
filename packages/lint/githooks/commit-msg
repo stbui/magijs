@@ -16,7 +16,7 @@ if (!commitRE.test(msg)) {
   process.exit(1);
 }
 
-if (!/@zhonan\.com$/.test(email)) {
-  console.error('此用户没有权限，具有权限的用户为： xxx@zhongan.com');
+if (!/@zhonan$/.test(email)) {
+  console.error('[zalint]', '此用户没有权限提交，具有权限的用户为： xxx@zhongan.com');
   process.exit(1);
 }

@@ -2,7 +2,8 @@
 const childProcess = require('child_process');
 
 try {
-  childProcess.exec('npm run lint', {
+  console.log('[zalint]', '执行 npm run precommit');
+  childProcess.exec('npm run precommit', {
     stdio: 'inherit',
   });
 } catch (error) {
