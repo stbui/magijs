@@ -1,8 +1,8 @@
 import { Command, Option, Action } from '@stbui/one-common';
-import { join, resolve } from 'path';
+import { join } from 'path';
 import { writeFileSync } from 'fs';
 
-import { StagedExec } from '../exec/staged.exec';
+import { StagedExec } from '../exec';
 
 @Command({
   name: 'staged',

@@ -1,7 +1,5 @@
 import { Command, Option, Action } from '@stbui/one-common';
-import { EslintExec } from '../exec/eslint.exec';
-
-import { StylelintReport } from '../exec/stylelint.exec';
+import { EslintExec, StylelintReport } from '../exec';
 
 @Command({
   name: 'report',

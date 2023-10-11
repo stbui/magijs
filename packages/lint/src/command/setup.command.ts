@@ -1,5 +1,5 @@
 import { Command, Action } from '@stbui/one-common';
-import { writeFileSync, existsSync } from 'fs';
+import { writeFileSync, existsSync, copyFileSync } from 'fs';
 import path from 'path';
 
 @Command({
@@ -53,6 +53,8 @@ module.exports = {
     writeFileSync(path.join(projectPath, '.stylelintrc.js'), stylelintrc);
 
     // prettier
+    console.log('[zalint]', 'install .prettierrc.js');
+    copyFileSync(require.resolve('../config/prettier'), path.join(projectPath, '.prettierrc.js'));
 
     // git hooks
     const precommit = `

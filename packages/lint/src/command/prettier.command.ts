@@ -1,7 +1,7 @@
 import { Command, Option, Action } from '@stbui/one-common';
-import { PrettierExec } from '../exec/prettier.exec';
 import { copyFileSync } from 'fs';
 import { join } from 'path';
+import { PrettierExec } from '../exec';
 
 @Command({
   name: 'prettier',
