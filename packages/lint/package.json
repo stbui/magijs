@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.52",
+  "version": "0.0.1-alpha.48.53",
   "description": "",
   "author": {
     "name": "王明",
@@ -24,7 +24,7 @@
     "build": "yarn run build-cjs && yarn run build-esm",
     "build-cjs": "rimraf ./lib && tsc",
     "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "install": "node ./lib/githooks.js"
+    "install": "node ./lib/cli.js setup"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.16.3",

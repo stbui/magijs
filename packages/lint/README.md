@@ -50,7 +50,13 @@ zalint report -d client
 
 #### 与 Git 工作流结合
 
-我们也推荐使用 lint-staged 和 Husky，将 lint 与 Git 工作流结合使用，以便在提交代码时自动 lint 本次变更的代码。
+将 lint 与 Git 工作流结合使用，以便在提交代码时自动 lint 本次变更的代码。
+
+git commit 流程检查:
+
+- git commit 时会自动执行npm run precommit，若执行报错将终止提交
+- 校验 commit 消息格式是否合法，若不合法将终止提交
+- 校验 git config user.email 配置是否为众安(xxx@zhongan.com)邮箱，否则终止提交
 
 ### link
 
