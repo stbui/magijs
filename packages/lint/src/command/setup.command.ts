@@ -34,15 +34,13 @@ export class SetupCommand {
     }
 
     // .eslintrc.js
-    const eslintrc = `
-module.exports = {
+    const eslintrc = `module.exports = {
   extends: require.resolve('@magi/lint/eslint'),
 };
 `;
 
     // .stylelintrc.js
-    const stylelintrc = `
-module.exports = {
+    const stylelintrc = `module.exports = {
   extends: require.resolve('@magi/lint/stylelint'),
 };
 `;
@@ -57,8 +55,7 @@ module.exports = {
     copyFileSync(require.resolve('../config/prettier'), path.join(projectPath, '.prettierrc.js'));
 
     // git hooks
-    const precommit = `
-#!/usr/bin/env node
+    const precommit = `#!/usr/bin/env node
 const childProcess = require('child_process');
 
 try {
@@ -75,8 +72,7 @@ try {
     console.log('[zalint]', 'install', 'pre-commit');
     writeFileSync(path.join(gitHooksPath, 'pre-commit'), precommit);
 
-    const commitMSG = `
-#!/usr/bin/env node
+    const commitMSG = `#!/usr/bin/env node
 const childProcess = require('child_process');
 const fs = require('fs');
 
