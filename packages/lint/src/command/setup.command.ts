@@ -90,7 +90,8 @@ if (!commitRE.test(msg)) {
   process.exit(1);
 }
 
-if (!/@zhonan$/.test(email)) {
+
+if (!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(email)) {
   console.error('[zalint]', '此用户没有权限提交，具有权限的用户为： xxx@zhongan.com');
   process.exit(1);
 }

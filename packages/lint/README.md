@@ -10,7 +10,6 @@
 
 在现有规范下，把分散在项目中的依赖统一集成到了zalint命令包中维护升级。对于规范将内置在zalint中，不提供外部配置方式。后续将使用 zalint 内置的规范执行
 
-
 ### 使用
 
 #### 安装
@@ -56,12 +55,15 @@ git commit 流程检查:
 
 - git commit 时会自动执行npm run precommit，若执行报错将终止提交
 - 校验 commit 消息格式是否合法，若不合法将终止提交
-- 校验 git config user.email 配置是否为众安(xxx@zhongan.com)邮箱，否则终止提交
+- 校验 git config user.email 配置是否邮箱，否则终止提交
 
-### link
+#### 内置规则
 
-https://alloyteam.github.io/eslint-config-alloy/?language=zh-CN
+## 参考
 
-内置的 ESLint 规则列表：
-
-内置的 Stylelint 配置：
+- https://alloyteam.github.io/eslint-config-alloy/?language=zh-CN
+- https://github.com/conventional-changelog/commitlint
+- https://github.com/eslint/eslint
+- https://github.com/prettier/prettier
+- https://github.com/okonet/lint-staged
+- 
