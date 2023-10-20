@@ -23,7 +23,7 @@ export class StagedCommand {
     alias: 'fix',
     description: '按照配置规则修复代码',
   })
-  fix: boolean = false;
+  fix: boolean = true;
 
   constructor() {}
 
@@ -35,11 +35,12 @@ export class StagedCommand {
     const prettierConfig = require.resolve('../config/prettier');
 
     const dir = this.dir;
+    const fix = this.fix ? '--fix' : '';
 
     const config = {
       [`${dir}/**/*.{js,jsx,ts,tsx,scss,json}`]: [`prettier --config ${prettierConfig} --write`, 'git add'],
-      [`${dir}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} --fix`, 'git add'],
-      [`${dir}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} --fix`, 'git add'],
+      [`${dir}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} ${fix}`, 'git add'],
+      [`${dir}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} ${fix}`, 'git add'],
     };
 
     writeFileSync(configPath, JSON.stringify(config, null, 2), { encoding: 'utf-8' });

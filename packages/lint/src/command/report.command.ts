@@ -3,10 +3,10 @@ import { EslintExec, StylelintReport } from '../exec';
 
 @Command({
   name: 'report',
-  description: 'report 静态扫描',
+  description: '生成报告文件',
   example: {
     command: 'zalint report -d src',
-    description: '静态扫描',
+    description: '生成报告文件',
   },
 })
 export class ReportCommand {

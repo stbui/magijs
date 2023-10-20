@@ -5,10 +5,10 @@ import { PrettierExec } from '../exec';
 
 @Command({
   name: 'prettier',
-  description: 'prettier 静态扫描',
+  description: 'prettier 代码格式化',
   example: {
     command: 'zalint prettier -d src',
-    description: '静态扫描',
+    description: '代码格式化',
   },
 })
 export class PrettierCommand {
