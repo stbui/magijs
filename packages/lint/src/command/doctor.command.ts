@@ -50,11 +50,26 @@ export class DoctorCommand {
       'lint-staged',
       'husky',
       'prettier',
+
+      // eslint
       'eslint',
       'eslint-config-za',
+      'eslint-plugin-babel',
+      'eslint-plugin-import',
+      'eslint-plugin-jsx-a11y',
+      'eslint-plugin-react',
+      'eslint-plugin-react-hooks',
+      'eslint-plugin-vue',
+
+      // stylelint
       'stylelint',
       'stylelint-checkstyle-formatter',
       'stylelint-config-recommended-scss',
+      // babel
+      '@babel/plugin-proposal-decorators',
+      '@babel/eslint-parser',
+      '@babel/eslint-plugin',
+      '@babel/preset-react',
     ];
 
     const PKG_PATH = join(APP_PATH, 'package.json');

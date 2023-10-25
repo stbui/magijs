@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.64",
+  "version": "0.0.1-alpha.48.65",
   "description": "前端工作流程规约",
   "author": {
     "name": "王明",
@@ -46,7 +46,6 @@
     "stylelint": "13.6.1",
     "stylelint-checkstyle-formatter": "0.1.2",
     "stylelint-config-za": "0.3.0",
-    "typescript": "^4.0.2",
     "eslint-config-prettier": "^8.8.0",
     "@babel/plugin-proposal-decorators": "^7.22.7",
     "@stbui/one-cli": "~0.0.10-alpha.0",
