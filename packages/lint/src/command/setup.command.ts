@@ -42,6 +42,8 @@ export class SetupCommand {
     });
 
     // git hooks
+    // 删除其他hooks
+    
     const hooks_templates = ['pre-commit', 'commit-msg'];
     hooks_templates.map((template) => {
       const TEMPLATE_PATH = join(__dirname, '../../template', template);

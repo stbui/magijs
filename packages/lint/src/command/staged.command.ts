@@ -23,7 +23,7 @@ export class StagedCommand {
     alias: 'fix',
     description: '按照配置规则修复代码',
   })
-  fix: boolean = true;
+  fix: boolean = false;
 
   constructor() {}
 

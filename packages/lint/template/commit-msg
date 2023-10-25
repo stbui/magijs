@@ -15,8 +15,3 @@ if (!commitRE.test(msg)) {
   console.error('详情请查看 git commit 提交规范');
   process.exit(1);
 }
-
-if (!/^[a-zA-Z0-9]+([-_.][A-Za-zd]+)*@([a-zA-Z0-9]+[-.])+[A-Za-zd]{2,5}$/.test(email)) {
-  console.error('[zalint]', '此用户没有权限提交，具有权限的用户为： xxx@zhongan.com');
-  process.exit(1);
-}
