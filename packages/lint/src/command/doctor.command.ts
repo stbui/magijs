@@ -80,7 +80,7 @@ export class DoctorCommand {
       delete packageModule.devDependencies[dep];
     });
 
-    console.log('zalint', '✅ 修复依赖包');
+    console.log('zalint', '✅ 修复','依赖包');
     writeFileSync(PKG_PATH, JSON.stringify(packageModule, null, 2));
   }
 }
