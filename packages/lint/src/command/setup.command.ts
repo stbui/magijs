@@ -1,5 +1,5 @@
 import { Command, Action } from '@stbui/one-common';
-import { existsSync, copyFileSync, chmodSync } from 'fs';
+import { existsSync, copyFileSync, chmodSync, unlinkSync } from 'fs';
 import { join, resolve } from 'path';
 
 @Command({
@@ -34,22 +34,24 @@ export class SetupCommand {
     }
 
     // lint
-    const lint_templates = ['.eslintrc.js', '.stylelintrc.js', '.prettierrc.js'];
-    lint_templates.map((template) => {
-      const TEMPLATE_PATH = join(__dirname, '../../template', template);
-      copyFileSync(TEMPLATE_PATH, join(projectPath, template));
-      console.log('[zalint]', '✅ install', template);
+    ['.eslintrc.js', '.stylelintrc.js', '.prettierrc.js'].map(file => {
+      const TEMPLATE_PATH = join(__dirname, '../../template', file);
+      copyFileSync(TEMPLATE_PATH, join(projectPath, file));
+      console.log('[zalint]', '✅ 修复配置', file);
     });
 
     // git hooks
-    // 删除其他hooks
-    
-    const hooks_templates = ['pre-commit', 'commit-msg'];
-    hooks_templates.map((template) => {
-      const TEMPLATE_PATH = join(__dirname, '../../template', template);
-      copyFileSync(TEMPLATE_PATH, join(gitHooksPath, template));
-      chmodSync(join(gitHooksPath, template), 0o775);
-      console.log('[zalint]', '✅ install', template);
+    ['pre-commit', 'commit-msg'].map(hookName => {
+      const TEMPLATE_PATH = join(__dirname, '../../template', hookName);
+      copyFileSync(TEMPLATE_PATH, join(gitHooksPath, hookName));
+      chmodSync(join(gitHooksPath, hookName), 0o775);
+      console.log('[zalint]', '✅ 安装钩子', hookName);
+    });
+
+    // 删除钩子
+    ['prepare-commit-msg', 'post-commit'].map(hookName => {
+      unlinkSync(join(gitHooksPath, './.git/hooks', hookName));
+      console.log('[zalint]', '✅ 删除钩子', hookName);
     });
   }
 }

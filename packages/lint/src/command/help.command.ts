@@ -86,7 +86,7 @@ export class HelpCommand {
       },
       {
         name: 'doctor',
-        description: '检查环境配置',
+        description: '修复环境配置',
         options: [],
       },
     ];

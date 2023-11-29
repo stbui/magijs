@@ -4,48 +4,49 @@
  * https://github.com/stbui/one
  */
 
-import { Command, Option, Action } from '@stbui/one-common';
-import { copyFileSync, writeFileSync, chmodSync } from 'fs';
+import { Command, Action } from '@stbui/one-common';
+import { copyFileSync, writeFileSync, chmodSync, unlinkSync } from 'fs';
 import { join } from 'path';
 
 @Command({
   name: 'doctor',
-  description: '检查配项目配置',
+  description: '修复配项目配置',
   example: {
-    command: 'zalint doctor --fix',
-    description: '检查配项目配置',
+    command: 'zalint doctor',
+    description: '修复配项目配置',
   },
 })
 export class DoctorCommand {
   constructor() {}
 
-  @Option({
-    description: '修复配置',
-  })
-  fix: boolean = false;
-
   @Action()
   run() {
     const APP_PATH = process.cwd();
 
-    const lint_templates = ['.eslintrc.js', '.stylelintrc.js', '.prettierrc.js'];
-
-    lint_templates.map(template => {
-      const TEMPLATE_PATH = join(__dirname, '../../template', template);
-      copyFileSync(TEMPLATE_PATH, join(APP_PATH, template));
-      console.log('[zalint]', '✅ 修复', template);
+    // 修复 配置文件
+    ['.eslintrc.js', '.stylelintrc.js', '.prettierrc.js'].map(file => {
+      const TEMPLATE_PATH = join(__dirname, '../../template', file);
+      copyFileSync(TEMPLATE_PATH, join(APP_PATH, file));
+      console.log('[zalint]', '✅ 修复配置', file);
     });
 
-    const hooks_templates = ['pre-commit', 'commit-msg'];
-    hooks_templates.map(template => {
-      const TEMPLATE_PATH = join(__dirname, '../../template', template);
-      copyFileSync(TEMPLATE_PATH, join(APP_PATH, './.git/hooks', template));
-      chmodSync(join(APP_PATH, './.git/hooks', template), 0o775);
-      console.log('[zalint]', '✅ 修复', template);
+    // 修复 git hooks
+    ['pre-commit', 'commit-msg'].map(hookName => {
+      const TEMPLATE_PATH = join(__dirname, '../../template', hookName);
+      copyFileSync(TEMPLATE_PATH, join(APP_PATH, './.git/hooks', hookName));
+      chmodSync(join(APP_PATH, './.git/hooks', hookName), 0o775);
+      console.log('[zalint]', '✅ 安装钩子', hookName);
+    });
+
+    // 删除钩子
+    ['prepare-commit-msg', 'post-commit'].map(hookName => {
+      unlinkSync(join(APP_PATH, './.git/hooks', hookName));
+      console.log('[zalint]', '✅ 删除钩子', hookName);
     });
 
     // -------------------
 
+    // 删除冗余的包
     const deps = [
       'lint-staged',
       'husky',
@@ -80,7 +81,9 @@ export class DoctorCommand {
       delete packageModule.devDependencies[dep];
     });
 
-    console.log('zalint', '✅ 修复','依赖包');
+    console.log('[zalint]', '✅ 修复依赖', 'package.json');
     writeFileSync(PKG_PATH, JSON.stringify(packageModule, null, 2));
   }
+
+  // 校验script配置
 }

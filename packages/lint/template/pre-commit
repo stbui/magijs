@@ -6,6 +6,6 @@ try {
   childProcess.execSync('npm run precommit', { stdio: 'inherit' });
 } catch (error) {
   console.log('[zalint]', '执行 npm run precommit 失败');
-  console.log(error.stdout.toString());
+  console.log('[zalint]', 'precommit 配置是否正确？');
   process.exit(1);
 }

@@ -38,7 +38,6 @@ export class StagedCommand {
     const fix = this.fix ? '--fix' : '';
 
     const config = {
-      [`${dir}/**/*.{js,jsx,ts,tsx,scss,json}`]: [`prettier --config ${prettierConfig} --write`, 'git add'],
       [`${dir}/**/*.{css,scss,less}`]: [`stylelint --config ${stylelintConfig} ${fix}`, 'git add'],
       [`${dir}/**/*.{js,jsx,tsx,ts}`]: [`eslint -c ${eslintConfig} ${fix}`, 'git add'],
     };
