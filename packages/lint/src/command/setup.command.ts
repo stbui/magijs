@@ -50,8 +50,10 @@ export class SetupCommand {
 
     // 删除钩子
     ['prepare-commit-msg', 'post-commit'].map(hookName => {
-      unlinkSync(join(gitHooksPath, './.git/hooks', hookName));
-      console.log('[zalint]', '✅ 删除钩子', hookName);
+      try {
+        unlinkSync(join(gitHooksPath, './.git/hooks', hookName));
+        console.log('[zalint]', '✅ 删除钩子', hookName);
+      } catch (e) {}
     });
   }
 }
