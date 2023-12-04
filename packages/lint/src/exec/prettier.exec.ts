@@ -4,8 +4,12 @@ import { resolve } from 'path';
 export function PrettierExec(command: string[]) {
   const prettier = resolve(require.resolve('prettier'), '../bin/prettier.cjs');
 
-  fork(prettier, command, {
+  const child = fork(prettier, command, {
     stdio: 'inherit',
+  });
+
+  child.on('exit', code => {
+    process.exit(code || 0);
   });
 
   console.log('[zalint]', JSON.stringify(command));

@@ -10,8 +10,7 @@ const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|cho
 if (!commitRE.test(msg)) {
   console.log();
   console.error('不合法的 commit 消息格式，请使用正确的提交格式：');
-  console.error("feat: add 'comments' option");
-  console.error('fix: handle events on blur (close #28)');
-  console.error('详情请查看 git commit 提交规范');
+  console.error('feat: 新增功能');
+  console.error('fix: 修复问题 (close #1)');
   process.exit(1);
 }

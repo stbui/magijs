@@ -40,6 +40,7 @@ export class SetupCommand {
       console.log('[zalint]', '✅ 修复配置', file);
     });
 
+    // process.env.GIT_DIR
     // git hooks
     ['pre-commit', 'commit-msg'].map(hookName => {
       const TEMPLATE_PATH = join(__dirname, '../../template', hookName);
@@ -48,12 +49,14 @@ export class SetupCommand {
       console.log('[zalint]', '✅ 安装钩子', hookName);
     });
 
-    // 删除钩子
+    // 删除钩子是避免与husky冲突
     ['prepare-commit-msg', 'post-commit'].map(hookName => {
       try {
         unlinkSync(join(gitHooksPath, './.git/hooks', hookName));
         console.log('[zalint]', '✅ 删除钩子', hookName);
-      } catch (e) {}
+      } catch (e) {
+        // 没有husky，没有git init
+      }
     });
   }
 }

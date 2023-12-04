@@ -11,8 +11,12 @@ import checkstyleFormatter from 'stylelint-checkstyle-formatter';
 export function StylelintExec(command: string[]) {
   const bin = resolve(require.resolve('stylelint'), '../../bin/stylelint.js');
 
-  fork(bin, command, {
+  const child = fork(bin, command, {
     stdio: 'inherit',
+  });
+
+  child.on('exit', code => {
+    process.exit(code || 0);
   });
 
   console.log('[zalint]', JSON.stringify(command));
