@@ -33,7 +33,7 @@ module.exports = {
         }],
 
         messages: {
-            unexpectedChain: "Unexpected chained assignment."
+            unexpectedChain: "禁止连续赋值"
         }
     },
 

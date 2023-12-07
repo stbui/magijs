@@ -23,7 +23,7 @@ module.exports = {
         schema: [],
 
         messages: {
-            unexpected: "Unexpected use of continue statement."
+            unexpected: "禁止使用 continue"
         }
     },
 

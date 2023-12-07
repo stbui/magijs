@@ -63,7 +63,7 @@ module.exports = {
         ],
 
         messages: {
-            unusedExpression: "Expected an assignment or function call and instead saw an expression."
+            unusedExpression: "应为赋值或函数调用，但实际看到的却是表达式"
         }
     },
 

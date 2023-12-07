@@ -23,7 +23,7 @@ module.exports = {
         schema: [],
 
         messages: {
-            noNestedTernary: "Do not nest ternary expressions."
+            noNestedTernary: "禁止使用嵌套的三元表达式。"
         }
     },
 

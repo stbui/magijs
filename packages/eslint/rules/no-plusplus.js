@@ -70,7 +70,7 @@ module.exports = {
         ],
 
         messages: {
-            unexpectedUnaryOp: "Unary operator '{{operator}}' used."
+            unexpectedUnaryOp: "禁止使用 '{{operator}}' 操作符"
         }
     },
 

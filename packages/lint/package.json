@@ -32,6 +32,7 @@
     "@babel/preset-react": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
+    "@magijs/eslint": "0.0.1-alpha.48",
     "eslint": "^7.2.0",
     "eslint-config-za": "^2.4.0-alpha.4",
     "eslint-plugin-babel": "5.3.1",

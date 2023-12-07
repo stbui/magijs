@@ -97,7 +97,7 @@ module.exports = {
         ],
 
         messages: {
-            preferDestructuring: "Use {{type}} destructuring."
+            preferDestructuring: "{{type}} 使用解构赋值"
         }
     },
     create(context) {

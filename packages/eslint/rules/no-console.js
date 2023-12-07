@@ -46,7 +46,7 @@ module.exports = {
         hasSuggestions: true,
 
         messages: {
-            unexpected: "Unexpected console statement.",
+            unexpected: "禁止使用 console",
             removeConsole: "Remove the console.{{ propertyName }}()."
         }
     },
