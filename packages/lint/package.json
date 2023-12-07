@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.72",
+  "version": "0.0.1-alpha.48.75",
   "description": "前端工作流程规约",
   "author": {
     "name": "王明",
@@ -27,8 +27,6 @@
     "install": "node ./lib/cli.js setup"
   },
   "dependencies": {
-    "eslint-config-airbnb":"^18.2.1",
-    "eslint-config-airbnb-base":"^14.2.1",
     "@babel/eslint-parser": "^7.16.3",
     "@babel/eslint-plugin": "^7.14.5",
     "@babel/preset-react": "^7.0.0",
@@ -48,7 +46,8 @@
     "stylelint-checkstyle-formatter": "0.1.2",
     "stylelint-config-za": "0.3.0",
     "typescript": "^4.0.2",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "@babel/plugin-proposal-decorators": "^7.22.7",
     "@stbui/one-cli": "~0.0.10-alpha.0",
     "@stbui/one-common": "~0.0.8-alpha.0"
