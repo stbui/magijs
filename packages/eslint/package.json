@@ -3,38 +3,8 @@
   "version": "0.0.1-alpha.47",
   "description": "",
   "license": "ISC",
-  "author": "",
-  "main": "lib/index.js",
-  "module": "esm/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "esm",
-    "bin"
-  ],
-  "scripts": {
-    "build": "yarn run build-cjs && yarn run build-esm",
-    "build-cjs": "rimraf ./lib && tsc",
-    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-    "watch": "rimraf ./lib && tsc --watch"
-  },
-  "dependencies": {
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/eslint-plugin": "^7.14.5",
-    "@babel/preset-react": "^7.0.0",
-    "@magijs/compiled": "^0.0.1-alpha.47",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
-    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-    "eslint-config-za": "^2.4.0-alpha.3",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-babel": "5.3.1",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
-    "eslint-plugin-vue": "6.2.2"
-  },
+  "author": "stbui",
+  "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
