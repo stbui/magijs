@@ -47,6 +47,7 @@ export class DoctorCommand {
     });
 
     // -------------------
+    // .eslintrc.js
 
     // 删除冗余的包
     const deps = [

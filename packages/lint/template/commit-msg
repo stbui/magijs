@@ -3,14 +3,18 @@ const childProcess = require('child_process');
 const fs = require('fs');
 
 console.log('[zalint]', '检查 commit 消息格式');
-const email = childProcess.execSync('git config user.email').toString().trim();
+
 const msg = fs.readFileSync(process.argv[2], 'utf-8').trim();
-const commitRE = /^(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|release|workflow)((.+))?: .{1,100}/;
+const commitRE =
+  /^(((\ud83c[\udf00-\udfff])|(\ud83d[\udc00-\ude4f\ude80-\udeff])|[\u2600-\u2B55]) )?(revert: )?(feat|fix|docs|UI|refactor|perf|workflow|build|CI|typos|chore|tests|types|wip|release|dep|locale)(\(.+\))?: .{1,50}/;
 
 if (!commitRE.test(msg)) {
   console.log();
-  console.error('不合法的 commit 消息格式，请使用正确的提交格式：');
-  console.error('feat: 新增功能');
-  console.error('fix: 修复问题 (close #1)');
+  console.error('提交日志不符合规范, 合法的提交日志格式如下(emoji 和 模块可选填)：\n\n');
+  console.error('💥 feat(模块): 添加了个很棒的功能');
+  console.error('🐛 fix(模块): 修复了一些 bug');
+  console.error('📝 docs(模块): 更新了一下文档');
+  console.error('🌷 UI(模块): 修改了一下样式');
+  console.error('🏰 chore(模块): 对脚手架做了些更改');
   process.exit(1);
 }
