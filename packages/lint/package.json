@@ -1,6 +1,6 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.79",
+  "version": "0.0.1-alpha.48.80",
   "description": "前端工作流程规约",
   "author": {
     "name": "王明",
@@ -35,6 +35,7 @@
     "@magijs/eslint": "0.0.1-alpha.48",
     "eslint": "7.32.0",
     "eslint-config-za": "^2.4.0-alpha.4",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-babel": "5.3.1",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
