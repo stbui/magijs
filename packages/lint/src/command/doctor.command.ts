@@ -64,6 +64,8 @@ export class DoctorCommand {
       'eslint-plugin-react',
       'eslint-plugin-react-hooks',
       'eslint-plugin-vue',
+      'eslint-config-prettier',
+      'eslint-plugin-prettier',
 
       // stylelint
       'stylelint',
@@ -85,6 +87,7 @@ export class DoctorCommand {
     });
 
     console.log('[zalint]', '✅ 修复依赖', 'package.json');
+    console.log('[zalint]', '请重新install？');
     writeFileSync(PKG_PATH, JSON.stringify(packageModule, null, 2));
   }
 
