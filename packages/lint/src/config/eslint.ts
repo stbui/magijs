@@ -5,7 +5,6 @@ module.exports = {
     require.resolve('eslint-config-za'),
     require.resolve('eslint-config-za/typescript'),
     require.resolve('eslint-config-za/typescript-react'),
-    'plugin:prettier/recommended',
   ],
   parserOptions: {
     babelOptions: {
