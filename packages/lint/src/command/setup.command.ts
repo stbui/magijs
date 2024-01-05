@@ -1,5 +1,5 @@
 import { Command, Action } from '@stbui/one-common';
-import { existsSync, copyFileSync, chmodSync, unlinkSync } from 'fs';
+import { existsSync, copyFileSync, chmodSync, unlinkSync, readFileSync } from 'fs';
 import { join, resolve } from 'path';
 
 @Command({
@@ -15,6 +15,8 @@ export class SetupCommand {
 
   @Action()
   run() {
+    const APP_PATH = process.cwd();
+
     // 项目根路径
     let projectPath = '';
     // git hooks 路径
@@ -35,6 +37,16 @@ export class SetupCommand {
 
     // lint
     ['.eslintrc.js', '.stylelintrc.js', '.prettierrc.js'].map(file => {
+      // 如果是老项目没有迁移
+      try {
+        const PKG_PATH = join(APP_PATH, 'package.json');
+        const pkgString = readFileSync(PKG_PATH, { encoding: 'utf-8' });
+        // 自建项目, 没有lint
+        if (pkgString.indexOf('react-scripts') > -1) {
+          return;
+        }
+      } catch (e) {}
+
       const TEMPLATE_PATH = join(__dirname, '../../template', file);
       copyFileSync(TEMPLATE_PATH, join(projectPath, file));
       console.log('[zalint]', '✅ 修复配置', file);
@@ -43,6 +55,10 @@ export class SetupCommand {
     // process.env.GIT_DIR
     // git hooks
     ['pre-commit', 'commit-msg'].map(hookName => {
+      if (gitHooksPath === '') {
+        return;
+      }
+
       const TEMPLATE_PATH = join(__dirname, '../../template', hookName);
       copyFileSync(TEMPLATE_PATH, join(gitHooksPath, hookName));
       chmodSync(join(gitHooksPath, hookName), 0o775);
@@ -51,6 +67,10 @@ export class SetupCommand {
 
     // 删除钩子是避免与husky冲突
     ['prepare-commit-msg', 'post-commit'].map(hookName => {
+      if (gitHooksPath === '') {
+        return;
+      }
+
       try {
         unlinkSync(join(gitHooksPath, './.git/hooks', hookName));
         console.log('[zalint]', '✅ 删除钩子', hookName);

@@ -1,11 +1,7 @@
 {
   "name": "@magijs/lint",
-  "version": "0.0.1-alpha.48.81",
+  "version": "0.0.1-alpha.48.82",
   "description": "前端工作流程规约",
-  "author": {
-    "name": "王明",
-    "email": "wangming001@zhongan.com"
-  },
   "main": "lib/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
