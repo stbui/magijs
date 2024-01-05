@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author": "stbui <stbui@stbui.com>",
+  "author": "",
   "scripts": {
     "xxx": "cross-env DEPLOY_ENV=prd magi build",
     "postinstall": "magi setup",

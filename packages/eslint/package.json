@@ -3,7 +3,6 @@
   "version": "0.0.1-alpha.48",
   "description": "",
   "license": "ISC",
-  "author": "stbui",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
