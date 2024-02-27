@@ -1,10 +1,22 @@
 module.exports = {
   root: true,
-  extends: [
-    require.resolve('eslint-config-za/react'),
-    require.resolve('eslint-config-za'),
-    require.resolve('eslint-config-za/typescript'),
-    require.resolve('eslint-config-za/typescript-react'),
+  overrides: [
+    {
+      files: ['*.js'],
+      extends: [require.resolve('eslint-config-za'), 'plugin:prettier/recommended'],
+    },
+    {
+      files: ['*.jsx'],
+      extends: [require.resolve('eslint-config-za/react'), 'plugin:prettier/recommended'],
+    },
+    {
+      files: ['*.ts', '*.d.ts'],
+      extends: [require.resolve(require.resolve('eslint-config-za/typescript')), 'plugin:prettier/recommended'],
+    },
+    {
+      files: ['*.tsx'],
+      extends: [require.resolve(require.resolve('eslint-config-za/typescript-react')), 'plugin:prettier/recommended'],
+    },
   ],
   parserOptions: {
     babelOptions: {
