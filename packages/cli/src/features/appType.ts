@@ -5,9 +5,16 @@ export default (api: IApi) => {
     key: 'appType',
     config: {
       schema(Joi) {
-        return Joi.string().valid('h5', 'pc', 'micro', 'native');
+        return Joi.string().valid(
+          'h5',
+          'pc',
+          'docs',
+          'cordova',
+          'micro',
+          'native',
+        );
       },
-      default: 'pc',
+      default: 'h5',
     },
   });
 };

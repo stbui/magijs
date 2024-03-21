@@ -76,20 +76,36 @@ export class DoctorCommand {
       '@babel/eslint-parser',
       '@babel/eslint-plugin',
       '@babel/preset-react',
+      'babel-eslint',
+
+      // typescript
+      '@typescript-eslint/eslint-plugin',
+      '@typescript-eslint/parser',
     ];
 
     const PKG_PATH = join(APP_PATH, 'package.json');
     const packageModule = require(PKG_PATH);
 
     deps.forEach(dep => {
+      console.log('[zalint]', '删除冗余依赖', dep);
       delete packageModule.dependencies[dep];
       delete packageModule.devDependencies[dep];
     });
 
     console.log('[zalint]', '✅ 修复依赖', 'package.json');
+    // 校验script配置
+    // if (!packageModule.scripts['precommit']) {
+    //   packageModule.scripts['lint'] = 'npm run lint:js && npm run lint:style';
+    //   packageModule.scripts['lint:js'] = 'zalint eslint --fix';
+    //   packageModule.scripts['lint:style'] = 'zalint stylelint --fix';
+    //   packageModule.scripts['lint:report'] = 'zalint report';
+    //   packageModule.scripts['precommit'] = 'zalint staged';
+    //   packageModule.scripts['prettier'] = 'zalint prettier';
+    // }
+
     console.log('[zalint]', '请重新install？');
+
+    //
     writeFileSync(PKG_PATH, JSON.stringify(packageModule, null, 2));
   }
-
-  // 校验script配置
 }
