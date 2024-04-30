@@ -3,7 +3,7 @@
 const updater = require('../lib/updater');
 
 // 检测版本，是否可以更新
-new updater.Updater()
+updater.Updater()
     .then(() => {
         require('../lib');
     })
