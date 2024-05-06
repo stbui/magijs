@@ -1,6 +1,4 @@
-import { MagiApi } from '@magi/types';
-
-export default (api: MagiApi) => {
+export default api => {
   const configDefaults: Record<string, any> = {
     model: {},
     request: {},
@@ -10,7 +8,7 @@ export default (api: MagiApi) => {
   };
 
   api.modifyConfig((memo: any) => {
-    Object.keys(configDefaults).forEach((key) => {
+    Object.keys(configDefaults).forEach(key => {
       memo[key] = configDefaults[key];
     });
     return memo;

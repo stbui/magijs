@@ -27,7 +27,6 @@
     "minimist": "^1.2.5",
     "mockjs": "^1.1.0",
     "node-fetch": "^2.6.1",
-    "npm-updater": "3.0.3",
     "nunjucks": "^3.2.2",
     "openapi3-ts": "^2.0.1",
     "prettier": "^3.0.0",
