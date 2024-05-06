@@ -1,6 +1,6 @@
 {
   "name": "@magijs/cli",
-  "version": "0.0.1-alpha.48",
+  "version": "0.0.1-alpha.49",
   "description": "命令行工具",
   "license": "ISC",
   "bin": {
@@ -19,10 +19,10 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/compiled": "^0.0.1-alpha.47",
-    "@magijs/data-collection": "^0.0.1-alpha.47",
-    "@magijs/lint": "^0.0.1-alpha.48",
-    "@magijs/preset-plugin": "^0.0.1-alpha.48",
+    "@magijs/compiled": "^0.0.1-alpha.49",
+    "@magijs/data-collection": "^0.0.1-alpha.49",
+    "@magijs/lint": "^0.0.1-alpha.49",
+    "@magijs/preset-plugin": "^0.0.1-alpha.49",
     "@umijs/preset-vue": "4.0.21",
     "umi": "4.0.21"
   },

@@ -15,11 +15,11 @@
     "start": "magi dev"
   },
   "dependencies": {
-    "@magijs/magi": "^0.0.1-alpha.48",
+    "@magijs/magi": "^0.0.1-alpha.49",
     "vue": "^3.2.36"
   },
   "devDependencies": {
-    "@magijs/cli": "^0.0.1-alpha.48",
+    "@magijs/cli": "^0.0.1-alpha.49",
     "typescript": "^4.1.2"
   }
 }

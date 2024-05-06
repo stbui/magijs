@@ -1,6 +1,6 @@
 {
   "name": "@magijs/umi",
-  "version": "0.0.1-alpha.47",
+  "version": "0.0.1-alpha.49",
   "description": "",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -16,7 +16,7 @@
     "watch": "rimraf ./lib && tsc --watch"
   },
   "dependencies": {
-    "@magijs/data-collection": "0.0.1-alpha.10"
+    "@magijs/data-collection": "0.0.1-alpha.49"
   },
   "peerDependencies": {
     "umi": "^3.x.x"
