@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1](https://github.com/stbui/magijs/compare/v0.0.1-alpha.48...v0.0.1) (2024-05-16)
+
+
+### Features
+
+* 修复安全漏洞 ([fac27cd](https://github.com/stbui/magijs/commit/fac27cdd8d007a390f8be56036046f606760c135))
+* **lint:** 更新 ([f7bdad9](https://github.com/stbui/magijs/commit/f7bdad977f8887889af453ef762a0cf1114dd989))
+* **lint:** 更新lint代码 ([3538f4f](https://github.com/stbui/magijs/commit/3538f4fd1f2083c72222971939a036279421d933))
+* wip ([b77063a](https://github.com/stbui/magijs/commit/b77063a17c68057a8173ace164e12fe55266e327))
+
+
+
+
+
 ## [0.0.1-alpha.48](https://github.com/stbui/magijs/compare/v0.0.1-alpha.47...v0.0.1-alpha.48) (2022-12-06)
 
 ### Features

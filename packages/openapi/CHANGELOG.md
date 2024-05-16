@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1](https://github.com/stbui/magijs/compare/v0.0.1-alpha.48...v0.0.1) (2024-05-16)
+
+
+### Features
+
+* **lint:** 配置中移除prettier 对老配置的影响 ([685dafa](https://github.com/stbui/magijs/commit/685dafa90676f8c5077e1942ee8ec371ad08ff37))
+* prettier error ([61d9e97](https://github.com/stbui/magijs/commit/61d9e975232a92c9982af921ffa11779545530d6))
+
+
+
+
+
 ## [0.0.1-alpha.47](https://github.com/stbui/magijs/compare/v0.0.1-alpha.46...v0.0.1-alpha.47) (2022-11-23)
 
 **Note:** Version bump only for package @magijs/openapi

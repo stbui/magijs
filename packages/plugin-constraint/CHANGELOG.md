@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1](https://github.com/stbui/magijs/compare/v0.0.1-alpha.48...v0.0.1) (2024-05-16)
+
+
+### Features
+
+* **constraint:** 修改文档地址 ([84f5b3c](https://github.com/stbui/magijs/commit/84f5b3c96b52d91cc569f3727f0573db91a7ddb1))
+
+
+
+
+
 ## [0.0.1-alpha.47](https://github.com/stbui/magijs/compare/v0.0.1-alpha.46...v0.0.1-alpha.47) (2022-11-23)
 
 **Note:** Version bump only for package @magijs/plugin-constraint
