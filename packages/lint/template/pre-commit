@@ -1,9 +1,34 @@
 #!/usr/bin/env node
 const childProcess = require('child_process');
+const path = require('path');
+
+function tryRunCli(cli) {
+  try {
+    console.log('[zalint]', '尝试执行', cli);
+    childProcess.execSync(cli, { stdio: 'inherit' });
+  } catch (e) {
+    process.exit(1);
+  }
+}
+
+function abort(message) {
+  console.log('[zalint]', message);
+  process.exit(1);
+}
+
+function tryRunPrecommit() {
+  const pkgPath = path.join(process.cwd(), './package.json');
+  const pkgJson = require(pkgPath);
+
+  if (pkgJson.scripts.precommit) {
+    tryRunCli('npm run precommit');
+  } else {
+    abort('配置错误：npm run precommit');
+  }
+}
 
 try {
-  console.log('[zalint]', '执行 npm run precommit');
-  childProcess.execSync('npm run precommit', { stdio: 'inherit' });
+  tryRunPrecommit();
 } catch (error) {
-  console.log('[zalint]', '没有执行成功');
+  console.log('[zalint]', error);
 }

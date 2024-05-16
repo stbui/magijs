@@ -10,9 +10,6 @@ import {
   HelpCommand,
 } from './command';
 
-const pkg = require('../package.json');
-console.log('[zalint]', 'version:', pkg.version);
-
 function bootstrap() {
   Factory.create([
     EslintCommand,
